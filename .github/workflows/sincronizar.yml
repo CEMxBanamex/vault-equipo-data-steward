@@ -1,0 +1,52 @@
+name: Sincronizar vault
+
+# En cada cambio a main: regenera los índices automáticos y propaga main
+# a la rama de cada integrante. Corre también a diario como respaldo.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 6 * * *"  # 00:00 en la Ciudad de México
+  workflow_dispatch:
+
+concurrency:
+  group: sincronizar-vault
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.VAULT_BOT_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Configurar Git
+        run: |
+          git config user.name "vault-bot"
+          git config user.email "vault-bot@users.noreply.github.com"
+
+      - name: Regenerar índices automáticos
+        run: |
+          python scripts/generar_indices.py
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add tec
+            git commit -m "chore: regenerar índices automáticos [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Propagar main a las ramas de los integrantes
+        env:
+          GH_TOKEN: ${{ secrets.VAULT_BOT_TOKEN }}
+        run: bash scripts/propagar_main.sh

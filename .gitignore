@@ -1,0 +1,7 @@
+# Configuración local de Obsidian (cada quien la suya)
+.obsidian/
+.trash/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

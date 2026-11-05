@@ -1,0 +1,31 @@
+name: Validar vault
+
+# Revisa cada Pull Request a main antes de fusionarlo.
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Frontmatter, enlaces y sección automática
+        run: python scripts/validar_vault.py --base "origin/${{ github.base_ref }}"
+
+      - name: Buscar secretos con gitleaks
+        run: |
+          curl -sSL -o gitleaks.tar.gz \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz
+          tar -xzf gitleaks.tar.gz gitleaks
+          ./gitleaks detect --source . --log-opts "origin/${{ github.base_ref }}..HEAD" --redact --no-banner

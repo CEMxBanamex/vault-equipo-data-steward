@@ -1,0 +1,20 @@
+# Dueños por área. GitHub les pide revisión cuando un PR toca su área.
+# Reemplaza los @USUARIO_* por los usuarios reales de GitHub.
+
+# Por defecto (incluye CLAUDE.md, README, workflows y scripts)
+*                                              @USUARIO_JUAN_PABLO
+
+/tec/data-steward-agentico/arquitectura/       @USUARIO_JUAN_PABLO
+/tec/data-steward-agentico/plan-de-trabajo/    @USUARIO_JUAN_PABLO
+/tec/data-steward-agentico/producto/           @USUARIO_JUAN_PABLO
+
+/tec/data-steward-agentico/tools/              @USUARIO_IRIS @USUARIO_MARIO
+
+/tec/data-steward-agentico/agentes/            @USUARIO_CARLOS_DELGADO @USUARIO_CARLOS_RAMOS
+/tec/data-steward-agentico/modelos/            @USUARIO_CARLOS_DELGADO @USUARIO_CARLOS_RAMOS
+/tec/data-steward-agentico/chat/               @USUARIO_CARLOS_DELGADO @USUARIO_CARLOS_RAMOS
+
+/tec/data-steward-agentico/interfaces/         @USUARIO_YAEL @USUARIO_MAURICIO
+
+# Sesiones: cada quien crea las suyas, sin dueño
+/tec/data-steward-agentico/sesiones/
