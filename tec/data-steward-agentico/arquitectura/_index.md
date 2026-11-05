@@ -41,3 +41,16 @@ resumen: Infraestructura del MVP en AWS (ALB, ASG, EC2 con Docker Compose, RDS c
 - **CI/CD (GitHub Actions):** lint y pruebas en cada PR, generación de tipos de TypeScript desde el OpenAPI, imágenes en ECR y despliegue con instance refresh del ASG al hacer merge a `main`.
 - **Primer despliegue real:** al terminar la Fase 2, no al final. Ver [[tec/data-steward-agentico/plan-de-trabajo/_index|plan de trabajo]].
 - Responsable de infraestructura y CI/CD: Juan Pablo.
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/arquitectura/auto-scaling-no-acelera-el-modelo\|auto-scaling-no-acelera-el-modelo]] | aprendizaje |  | 2026-10-21 | El cuello de botella son las GPUs de las laptops, así que el Auto Scaling Group no acelera la inferencia; sirve para demostrar resiliencia. |
+| [[tec/data-steward-agentico/arquitectura/ollama-solo-por-tailscale\|ollama-solo-por-tailscale]] | aprendizaje |  | 2026-10-21 | Ollama no tiene autenticación, así que nunca se expone a internet; solo es alcanzable por Tailscale y con ACL limitadas al puerto 11434. |
+| [[tec/data-steward-agentico/arquitectura/decision-monolito-modular\|decision-monolito-modular]] | decision |  | 2026-10-21 | Un solo repositorio y un solo servicio desplegable, con los agentes como nodos de un grafo LangGraph, porque es lo más simple de desplegar y depurar para un MVP con equipo chico. |
+| [[tec/data-steward-agentico/arquitectura/decision-subida-directa-a-s3\|decision-subida-directa-a-s3]] | decision |  | 2026-10-21 | El navegador sube el archivo del caso directo a S3 con una URL prefirmada, sin pasar por el backend. |
+| [[tec/data-steward-agentico/arquitectura/decision-jwt-al-final\|decision-jwt-al-final]] | decision |  | 2026-10-28 | El login con Cognito por correo se conecta temprano en el frontend, pero la validación del JWT en las APIs se activa al final con un interruptor AUTH_MODE, para probar fácil con Postman. |
+<!-- indice-automatico:fin -->

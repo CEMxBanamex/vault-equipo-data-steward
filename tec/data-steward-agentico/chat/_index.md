@@ -43,3 +43,14 @@ El socio formador pidió agregar un chat que ayude a resolver preguntas sobre la
 - Esto amplía la decisión anterior del enrutador por intención: los dominios ahora son gobernanza, consultas y casos.
 - **Datos nuevos:** tablas de negocio sintéticas, vistas consultables, catálogo de datos, glosario, políticas de gobernanza y reglas de calidad con resultados.
 - **Pendiente:** confirmar con el socio formador qué datos de negocio esperan poder consultar (solo facturas y proveedores, u otros dominios).
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/chat/decision-pasos-del-agente-visibles\|decision-pasos-del-agente-visibles]] | decision |  | 2026-10-28 | El "insight de pensamiento" son los pasos del agente (no el razonamiento del modelo): una línea que cambia, se expande en lista al presionarla y queda como resumen colapsado junto a la respuesta. |
+| [[tec/data-steward-agentico/chat/decision-un-grafo-con-enrutador-por-intencion\|decision-un-grafo-con-enrutador-por-intencion]] | decision |  | 2026-10-28 | El chat por caso y el global son un solo grafo de LangGraph que primero clasifica la intención de la pregunta y luego toma la ruta y la fuente que corresponde. |
+| [[tec/data-steward-agentico/chat/decision-enrutador-por-dominio-y-capa-semantica\|decision-enrutador-por-dominio-y-capa-semantica]] | decision |  | 2026-11-04 | El chat usa un enrutador por dominio con agentes especializados (gobernanza, analista de datos, casos) e intención mixta; las consultas de negocio van por una capa semántica con SQL validado como respaldo. |
+<!-- indice-automatico:fin -->

@@ -44,3 +44,13 @@ Sin notas propias todavía; las decisiones de diseño viven en [[tec/data-stewar
 ## Actualización 2026-11-04 (requerimiento de gobernanza)
 - Entre los requerimientos del reto, el chat conectado al modelo debe resolver **dudas de gobernanza de datos** y permitir **consultas a la base** sobre información de negocio y de las facturas. Ver [[tec/data-steward-agentico/chat/decision-enrutador-por-dominio-y-capa-semantica|decisión]].
 - **Pendiente con el socio formador:** qué datos de negocio esperan consultar.
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/producto/deploy-mockup-vercel\|deploy-mockup-vercel]] | aprendizaje |  | 2026-10-28 | El mockup está desplegado en Vercel desde la carpeta frontend del monorepo; el repo vive en la organización de GitHub, así que Vercel necesita acceso a ella. |
+| [[tec/data-steward-agentico/producto/mockup-interfaz\|mockup-interfaz]] | aprendizaje |  | 2026-10-28 | Qué muestra cada pantalla del mockup navegable (Vite + React, sin conexiones), qué se puede hacer en ella y qué principio del producto refleja. |
+<!-- indice-automatico:fin -->

@@ -54,3 +54,19 @@ Mockup de alta fidelidad hecho a partir del brief de diseño del socio formador.
 - **Componente de pasos:** línea que cambia, se expande en lista y queda como resumen "✓ 4 pasos · 3.2 s ›". Ver [[tec/data-steward-agentico/chat/decision-pasos-del-agente-visibles|decisión]].
 - **Pendiente:** agregar el panel de chat y la pantalla Asistente al mockup.
 - Responsables del frontend: Yael García y Mauricio Guerrero.
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/interfaces/decision-supuestos-del-mockup\|decision-supuestos-del-mockup]] | decision |  | 2026-10-28 | Qué se decidió o inventó en el mockup porque el brief no lo definía, y qué queda por validar. |
+| [[tec/data-steward-agentico/interfaces/pantalla-bandeja-de-casos\|pantalla-bandeja-de-casos]] | pantalla |  | 2026-10-28 | Pantalla 2, lista de casos con resumen, filtros y tabla; desde aquí se abre el detalle de cada caso. |
+| [[tec/data-steward-agentico/interfaces/pantalla-bitacora\|pantalla-bitacora]] | pantalla |  | 2026-10-28 | Pantalla 6, registro de solo lectura de todo lo que hacen las personas y el agente, con filtros, exportación y filas expandibles. |
+| [[tec/data-steward-agentico/interfaces/pantalla-detalle-factura\|pantalla-detalle-factura]] | pantalla |  | 2026-10-28 | Pantalla 4, la más importante: documento original a la izquierda; datos extraídos, hallazgos y resultado sugerido a la derecha; la persona confirma, corrige o escala. |
+| [[tec/data-steward-agentico/interfaces/pantalla-detalle-validacion\|pantalla-detalle-validacion]] | pantalla |  | 2026-10-28 | Pantalla 5, como el detalle de factura pero con los registros en tabla, filas con problema resaltadas y la lista de políticas consultadas. |
+| [[tec/data-steward-agentico/interfaces/pantalla-inicio-de-sesion\|pantalla-inicio-de-sesion]] | pantalla |  | 2026-10-28 | Pantalla 1, entrada a la app con un solo botón; el acceso lo resuelve el proveedor externo (Cognito). |
+| [[tec/data-steward-agentico/interfaces/pantalla-subir-caso\|pantalla-subir-caso]] | pantalla |  | 2026-10-28 | Pantalla 3, alta de un caso en dos pasos (tipo de revisión y archivos) con sus errores de carga. |
+| [[tec/data-steward-agentico/interfaces/sistema-de-diseno\|sistema-de-diseno]] | referencia |  | 2026-10-28 | Paleta en hex, tipografía, componentes reutilizables para React y reglas de accesibilidad del mockup. |
+<!-- indice-automatico:fin -->

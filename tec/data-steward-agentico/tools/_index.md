@@ -59,3 +59,25 @@ El mapa de arriba quedó con los responsables anteriores. Responsables vigentes;
 | [[tec/data-steward-agentico/tools/buscar-facturas\|buscar_facturas]] | Mauricio | Analista de datos |
 
 **Convenciones:** un archivo por tool en el código del MCP; los Carlos dejan una tool de ejemplo con el manejo de rol, errores, pasos y pruebas; Iris y Mario revisan todo PR que toque el esquema o consultas a la base.
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/tools/buscar-facturas\|buscar-facturas]] | tool |  | 2026-11-04 | Lista facturas concretas con filtros predefinidos (proveedor, fechas, resultado, regla). |
+| [[tec/data-steward-agentico/tools/buscar-politicas\|buscar-politicas]] | tool |  | 2026-11-04 | Búsqueda semántica en el RAG (pgvector) de políticas de facturas o de gobernanza, con fuente, versión y vigencia de cada fragmento. |
+| [[tec/data-steward-agentico/tools/consultar-bitacora\|consultar-bitacora]] | tool |  | 2026-11-04 | Consulta la bitácora de auditoría con filtros: quién hizo qué, sobre qué caso y cuándo. |
+| [[tec/data-steward-agentico/tools/consultar-calidad\|consultar-calidad]] | tool |  | 2026-11-04 | Devuelve las reglas de calidad de una tabla y sus últimos resultados. |
+| [[tec/data-steward-agentico/tools/consultar-caso\|consultar-caso]] | tool |  | 2026-11-04 | Devuelve todo lo de un caso: datos extraídos, hallazgos con regla y versión, resultado sugerido y decisión del analista. |
+| [[tec/data-steward-agentico/tools/consultar-catalogo\|consultar-catalogo]] | tool |  | 2026-11-04 | Devuelve la ficha de catálogo de una tabla o columna: descripción, dueño, clasificación de sensibilidad y origen. |
+| [[tec/data-steward-agentico/tools/consultar-glosario\|consultar-glosario]] | tool |  | 2026-11-04 | Devuelve la definición oficial de un término de negocio desde el glosario. |
+| [[tec/data-steward-agentico/tools/ejecutar-consulta\|ejecutar-consulta]] | tool |  | 2026-11-04 | Ejecuta un SELECT escrito por el modelo, solo después de validarlo, sobre vistas permitidas y con un usuario de solo lectura. Es el respaldo de la capa semántica. |
+| [[tec/data-steward-agentico/tools/extraer-campos-factura\|extraer-campos-factura]] | tool |  | 2026-11-04 | Manda la factura al modelo de visión y devuelve sus campos en JSON con nivel de confianza por campo. |
+| [[tec/data-steward-agentico/tools/leer-documento\|leer-documento]] | tool |  | 2026-11-04 | Trae el archivo de un caso desde S3 y lo convierte según su tipo (imagen, PDF con texto, Excel o CSV). |
+| [[tec/data-steward-agentico/tools/listar-vistas-consultables\|listar-vistas-consultables]] | tool |  | 2026-11-04 | Muestra al analista de datos las vistas que puede consultar y la descripción de cada columna, antes de escribir SQL de respaldo. |
+| [[tec/data-steward-agentico/tools/obtener-metrica\|obtener-metrica]] | tool |  | 2026-11-04 | Calcula una métrica de la capa semántica con dimensiones y filtros; el código genera el SQL, no el modelo. |
+| [[tec/data-steward-agentico/tools/registrar-hallazgo\|registrar-hallazgo]] | tool |  | 2026-11-04 | Escribe un hallazgo en la bitácora de auditoría con su regla, versión, evidencia y explicación. |
+| [[tec/data-steward-agentico/tools/validar-reglas\|validar-reglas]] | tool |  | 2026-11-04 | Evalúa en código las reglas del catálogo sobre los campos extraídos y devuelve el resultado de cada regla con su versión y evidencia. |
+<!-- indice-automatico:fin -->

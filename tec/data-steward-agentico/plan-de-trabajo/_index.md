@@ -61,3 +61,15 @@ resumen: Organización del Equipo 1: integrantes, reparto por frentes, plan por 
 - **Tools:** repartidas entre los 7; nadie tiene más de 3.
 - **Agentes:** dos subequipos. Carlos Delgado lidera el grafo de casos y Carlos Ramos el del chat; cada agente tiene un dueño. Esto resuelve la división interna de los Carlos que estaba pendiente.
 - **Siguen pendientes:** dividir con nombre individual las subtareas de frontend entre Yael y Mauricio, y actualizar el Excel y `CODEOWNERS` con el nuevo reparto.
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/plan-de-trabajo/decision-contratos-primero\|decision-contratos-primero]] | decision |  | 2026-10-28 | En la Fase 0 se acuerdan los contratos (esquema, firmas de tools, endpoints y eventos SSE) como código, para que cada equipo trabaje en paralelo con datos falsos. |
+| [[tec/data-steward-agentico/plan-de-trabajo/decision-rebanadas-verticales\|decision-rebanadas-verticales]] | decision |  | 2026-10-28 | Cada equipo es dueño de su función de punta a punta: el frontend hace los endpoints de sus pantallas, agentes entrega funciones de Python y datos es dueño de las tools que leen y escriben la base. |
+| [[tec/data-steward-agentico/plan-de-trabajo/decision-reparto-de-tools-y-subequipos-de-agentes\|decision-reparto-de-tools-y-subequipos-de-agentes]] | decision | juan-pablo | 2026-11-04 | Iris y Mario se enfocan en la estructura y los datos de la base; las 14 tools se reparten entre todo el equipo y los agentes se construyen en dos subequipos, uno por grafo. |
+| [[tec/data-steward-agentico/plan-de-trabajo/decision-vault-compartido-del-equipo\|decision-vault-compartido-del-equipo]] | decision | juan-pablo | 2026-11-04 | El vault del proyecto se comparte con el equipo en un repo de la organización, con una rama por integrante, PR a main y un Action que regenera índices y propaga main a todas las ramas. |
+<!-- indice-automatico:fin -->

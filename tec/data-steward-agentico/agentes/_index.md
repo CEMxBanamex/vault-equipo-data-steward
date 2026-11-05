@@ -92,3 +92,21 @@ Las secciones anteriores dicen que todos los agentes los construyen los Carlos; 
 - **El dueño** lleva el prompt, las pruebas y la evaluación de su agente; **el líder** se encarga del grafo completo y de que los agentes encajen.
 - **Orden:** el esqueleto de los grafos arranca con tools falsas y cambia a las reales conforme salen.
 - **Convención:** los Carlos dejan un agente de ejemplo (prompt, conexión de tools, pasos y pruebas) que el resto copia.
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/agentes/agente-analista-de-datos\|agente-analista-de-datos]] | agente |  | 2026-11-04 | Agente del chat que responde consultas de negocio y de facturas: capa semántica primero, luego registros puntuales y SQL validado de respaldo. |
+| [[tec/data-steward-agentico/agentes/agente-de-casos\|agente-de-casos]] | agente |  | 2026-11-04 | Agente del chat que explica un caso concreto (datos, hallazgos, reglas y decisión) y responde preguntas de auditoría con la bitácora. |
+| [[tec/data-steward-agentico/agentes/agente-de-gobernanza\|agente-de-gobernanza]] | agente |  | 2026-11-04 | Agente del chat que responde dudas de gobernanza de datos: políticas, términos de negocio, dueños, clasificación de sensibilidad y calidad. |
+| [[tec/data-steward-agentico/agentes/agente-enrutador\|agente-enrutador]] | agente |  | 2026-11-04 | Punto de entrada del chat: clasifica la pregunta por dominio, la manda al agente o agentes que correspondan y combina las respuestas en las preguntas mixtas. |
+| [[tec/data-steward-agentico/agentes/agente-extractor-de-documentos\|agente-extractor-de-documentos]] | agente |  | 2026-11-04 | Primer agente del grafo de casos: lee el archivo y extrae los campos de la factura con el modelo de visión. |
+| [[tec/data-steward-agentico/agentes/agente-redactor-de-hallazgos\|agente-redactor-de-hallazgos]] | agente |  | 2026-11-04 | Tercer agente del grafo de casos: explica cada hallazgo con su evidencia, lo registra y deja el caso en pausa para la decisión del analista. |
+| [[tec/data-steward-agentico/agentes/agente-validador\|agente-validador]] | agente |  | 2026-11-04 | Segundo agente del grafo de casos: corre las reglas deterministas y busca las políticas que las respaldan. |
+| [[tec/data-steward-agentico/agentes/decision-checkpoints-y-bitacora-separados\|decision-checkpoints-y-bitacora-separados]] | decision |  | 2026-10-21 | Los checkpoints de LangGraph son el estado operativo del caso; la bitácora de auditoría es una tabla propia y es el registro oficial. |
+| [[tec/data-steward-agentico/agentes/decision-sin-tool-para-liberar-pagos\|decision-sin-tool-para-liberar-pagos]] | decision |  | 2026-10-21 | El servidor MCP no expone ninguna tool para liberar pagos ni ejecutar operaciones, así que el límite del agente lo impone la arquitectura y no solo el prompt. |
+| [[tec/data-steward-agentico/agentes/decision-validaciones-deterministas-en-codigo\|decision-validaciones-deterministas-en-codigo]] | decision |  | 2026-10-21 | Sumas, campos obligatorios y formatos se comprueban con código determinista en la tool validar_reglas; el LLM extrae, busca y explica, pero no calcula. |
+<!-- indice-automatico:fin -->

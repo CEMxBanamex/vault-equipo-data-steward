@@ -26,3 +26,15 @@ resumen: Inferencia con Ollama en las 5 laptops con GPU del equipo: reparto por 
 - **Se quita la LSTM:** ya no hay modelo de anomalías ni pesos en S3. Ver [[tec/data-steward-agentico/modelos/decision-se-quita-la-lstm|Decisión: se quita la LSTM]].
 - **Rol nuevo de chat:** el chat necesita un modelo (no de razonamiento, porque solo se muestran los pasos del agente). Lo puede cubrir la laptop de razonamiento y explicación o una dedicada, según la VRAM.
 - **Responsables:** Carlos Delgado y Carlos Ramos. Ver [[tec/data-steward-agentico/plan-de-trabajo/_index|plan de trabajo]].
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/modelos/mismo-modelo-de-embeddings\|mismo-modelo-de-embeddings]] | aprendizaje |  | 2026-10-21 | El modelo de embeddings, con su etiqueta exacta, tiene que ser el mismo al indexar las políticas y al consultarlas; si cambia, hay que reindexar. |
+| [[tec/data-steward-agentico/modelos/decision-inferencia-en-laptops\|decision-inferencia-en-laptops]] | decision |  | 2026-10-21 | El LLM, la visión y los embeddings corren con Ollama en las 5 laptops con GPU del equipo, conectadas por Tailscale, y no en AWS; el plan B es Bedrock con el mismo grafo. |
+| [[tec/data-steward-agentico/modelos/decision-lstm-como-auxiliar\|decision-lstm-como-auxiliar]] | decision |  | 2026-10-21 | La LSTM que pidió el socio formador se usa solo para detectar anomalías; no interpreta instrucciones, no recupera políticas y no justifica decisiones. |
+| [[tec/data-steward-agentico/modelos/decision-se-quita-la-lstm\|decision-se-quita-la-lstm]] | decision |  | 2026-10-28 | El socio formador ya no pide la LSTM; se quita la tool detectar_anomalia y en su lugar se agregan el chat y los pasos del agente visibles. |
+<!-- indice-automatico:fin -->
