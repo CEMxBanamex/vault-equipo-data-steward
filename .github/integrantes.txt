@@ -1,9 +1,8 @@
 # Una línea por integrante: <rama> <usuario de GitHub>
-# Reemplaza los USUARIO_* por los usuarios reales de GitHub.
-juan-pablo      USUARIO_JUAN_PABLO
-iris            USUARIO_IRIS
-mario           USUARIO_MARIO
-carlos-delgado  USUARIO_CARLOS_DELGADO
-carlos-ramos    USUARIO_CARLOS_RAMOS
-yael            USUARIO_YAEL
-mauricio        USUARIO_MAURICIO
+juan-pablo      MasterJuan579
+iris            Iris-Giselle-Balderas-Arreola
+mario           oropeza-m
+carlos-delgado  CDV-97
+carlos-ramos    Cmrg80
+yael            yaelgl
+mauricio        VictorinoStylo

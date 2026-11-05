@@ -5,10 +5,15 @@ Revisa en los archivos agregados o modificados:
 - Fecha con formato AAAA-MM-DD.
 - Enlaces [[...]] que apunten a notas existentes.
 - Que nadie haya editado a mano la sección automática de un _index.md.
-Uso: python scripts/validar_vault.py --base origin/main
+- Que cada quien solo modifique archivos de sus áreas, según .github/CODEOWNERS
+  y .github/integrantes.txt. Fuera de ellas solo puede crear sus propias
+  propuestas (propuesta-<tema>-<rama>.md) y sus sesiones
+  (sesiones/AAAA-MM-DD-<rama>-<tema>.md).
+Uso: python scripts/validar_vault.py --base origin/main --rama <rama-del-PR>
 """
 from pathlib import Path
 import argparse
+import fnmatch
 import re
 import subprocess
 import sys
@@ -18,6 +23,8 @@ EXCLUIDOS = {"CLAUDE.md", "README.md"}
 INICIO = "<!-- indice-automatico:inicio -->"
 FIN = "<!-- indice-automatico:fin -->"
 ENLACE = re.compile(r"\[\[([^\]]+)\]\]")
+RAMAS_ADMIN = {"juan-pablo"}  # pueden modificar todo el vault
+PROYECTO = "tec/data-steward-agentico/"
 
 
 def git(*args: str) -> str:
@@ -88,10 +95,90 @@ def validar(base: str) -> list[str]:
     return errores
 
 
+def usuarios_a_ramas() -> dict[str, str]:
+    ramas = {}
+    for linea in (RAIZ / ".github/integrantes.txt").read_text(encoding="utf-8").splitlines():
+        partes = linea.split()
+        if len(partes) == 2 and not linea.startswith("#"):
+            ramas[partes[1].lower()] = partes[0]
+    return ramas
+
+
+def reglas_codeowners() -> list[tuple[str, list[str]]]:
+    reglas = []
+    for linea in (RAIZ / ".github/CODEOWNERS").read_text(encoding="utf-8").splitlines():
+        linea = linea.split("#", 1)[0].strip()
+        if linea:
+            patron, *duenos = linea.split()
+            reglas.append((patron, [d.lstrip("@").lower() for d in duenos]))
+    return reglas
+
+
+def coincide(patron: str, ruta: str) -> bool:
+    if patron == "*":
+        return True
+    patron = patron.lstrip("/")
+    if patron.endswith("/"):
+        return ruta.startswith(patron)
+    return fnmatch.fnmatch(ruta, patron)
+
+
+def ramas_duenas(ruta: str, reglas, ramas) -> set[str]:
+    duenos: list[str] = []
+    for patron, usuarios in reglas:  # en CODEOWNERS gana la última regla que coincide
+        if coincide(patron, ruta):
+            duenos = usuarios
+    return {ramas[u] for u in duenos if u in ramas}
+
+
+def cambios_con_estado(base: str) -> list[tuple[str, str]]:
+    cambios = []
+    for linea in git("diff", "--name-status", "-M", f"{base}...HEAD").splitlines():
+        estado, *rutas = linea.split("\t")
+        if estado.startswith("R"):  # un renombre es borrar la ruta vieja y crear la nueva
+            cambios += [("D", rutas[0]), ("A", rutas[1])]
+        else:
+            cambios.append((estado[0], rutas[0]))
+    return cambios
+
+
+def permitido_fuera_de_area(estado: str, ruta: str, rama: str) -> bool:
+    if estado not in ("A", "M") or not ruta.startswith(PROYECTO):
+        return False
+    nombre = Path(ruta).name
+    if nombre.startswith("propuesta-") and nombre.endswith(f"-{rama}.md"):
+        return True
+    es_sesion = ruta.startswith(f"{PROYECTO}sesiones/")
+    return es_sesion and re.fullmatch(rf"\d{{4}}-\d{{2}}-\d{{2}}-{re.escape(rama)}-.+\.md", nombre) is not None
+
+
+def validar_areas(base: str, rama: str) -> list[str]:
+    if not rama or rama in RAMAS_ADMIN:
+        return []
+    ramas = usuarios_a_ramas()
+    if rama not in ramas.values():
+        return [f"La rama '{rama}' no está en .github/integrantes.txt; abre el PR desde tu rama de integrante."]
+    reglas = reglas_codeowners()
+    errores = []
+    for estado, ruta in cambios_con_estado(base):
+        if rama in ramas_duenas(ruta, reglas, ramas) or permitido_fuera_de_area(estado, ruta, rama):
+            continue
+        duenas = ", ".join(sorted(ramas_duenas(ruta, reglas, ramas))) or "juan-pablo"
+        accion = {"A": "creaste", "M": "modificaste", "D": "borraste"}.get(estado, "cambiaste")
+        errores.append(
+            f"{ruta}: {accion} un archivo que no es de tu área (dueños: {duenas}). "
+            f"Deshaz ese cambio y, si hace falta, crea una propuesta en esa carpeta: "
+            f"propuesta-<tema>-{rama}.md"
+        )
+    return errores
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", default="origin/main")
-    errores = validar(parser.parse_args().base)
+    parser.add_argument("--rama", default="", help="rama de origen del PR")
+    args = parser.parse_args()
+    errores = validar(args.base) + validar_areas(args.base, args.rama)
     if errores:
         print("Se encontraron problemas:\n")
         print("\n".join(f"- {e}" for e in errores))

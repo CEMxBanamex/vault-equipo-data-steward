@@ -1,20 +1,40 @@
-# Dueños por área. GitHub les pide revisión cuando un PR toca su área.
-# Reemplaza los @USUARIO_* por los usuarios reales de GitHub.
+# Dueños por área. Además de pedir revisión, el check "Validar vault" usa este
+# archivo para que cada quien solo modifique archivos de sus áreas.
+# Gana la ÚLTIMA regla que coincide con cada ruta.
+# MasterJuan579 (Juan Pablo) puede modificar todo y aparece en todas las reglas.
 
-# Por defecto (incluye CLAUDE.md, README, workflows y scripts)
-*                                              @USUARIO_JUAN_PABLO
+# Por defecto (incluye CLAUDE.md, README, workflows, scripts y _compartido)
+*                                                                  @MasterJuan579
 
-/tec/data-steward-agentico/arquitectura/       @USUARIO_JUAN_PABLO
-/tec/data-steward-agentico/plan-de-trabajo/    @USUARIO_JUAN_PABLO
-/tec/data-steward-agentico/producto/           @USUARIO_JUAN_PABLO
+/tec/data-steward-agentico/arquitectura/                           @MasterJuan579
+/tec/data-steward-agentico/plan-de-trabajo/                        @MasterJuan579
+/tec/data-steward-agentico/producto/                               @MasterJuan579
 
-/tec/data-steward-agentico/tools/              @USUARIO_IRIS @USUARIO_MARIO
+# Tools: cada nota con su responsable (el _index.md es de Juan Pablo)
+/tec/data-steward-agentico/tools/                                  @MasterJuan579
+/tec/data-steward-agentico/tools/leer-documento.md                 @CDV-97 @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/tools/extraer-campos-factura.md         @CDV-97 @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/tools/buscar-politicas.md               @CDV-97 @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/tools/validar-reglas.md                 @Iris-Giselle-Balderas-Arreola @MasterJuan579
+/tec/data-steward-agentico/tools/consultar-calidad.md              @Iris-Giselle-Balderas-Arreola @MasterJuan579
+/tec/data-steward-agentico/tools/obtener-metrica.md                @oropeza-m @MasterJuan579
+/tec/data-steward-agentico/tools/consultar-glosario.md             @oropeza-m @MasterJuan579
+/tec/data-steward-agentico/tools/registrar-hallazgo.md             @yaelgl @MasterJuan579
+/tec/data-steward-agentico/tools/consultar-bitacora.md             @yaelgl @MasterJuan579
+/tec/data-steward-agentico/tools/consultar-caso.md                 @VictorinoStylo @MasterJuan579
+/tec/data-steward-agentico/tools/buscar-facturas.md                @VictorinoStylo @MasterJuan579
 
-/tec/data-steward-agentico/agentes/            @USUARIO_CARLOS_DELGADO @USUARIO_CARLOS_RAMOS
-/tec/data-steward-agentico/modelos/            @USUARIO_CARLOS_DELGADO @USUARIO_CARLOS_RAMOS
-/tec/data-steward-agentico/chat/               @USUARIO_CARLOS_DELGADO @USUARIO_CARLOS_RAMOS
+# Agentes: los Carlos por defecto; cada dueño de agente también edita su nota
+/tec/data-steward-agentico/agentes/                                @CDV-97 @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/agentes/agente-validador.md             @Iris-Giselle-Balderas-Arreola @CDV-97 @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/agentes/agente-redactor-de-hallazgos.md @yaelgl @CDV-97 @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/agentes/agente-de-gobernanza.md         @oropeza-m @CDV-97 @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/agentes/agente-de-casos.md              @VictorinoStylo @CDV-97 @Cmrg80 @MasterJuan579
 
-/tec/data-steward-agentico/interfaces/         @USUARIO_YAEL @USUARIO_MAURICIO
+/tec/data-steward-agentico/modelos/                                @CDV-97 @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/chat/                                   @CDV-97 @Cmrg80 @MasterJuan579
 
-# Sesiones: cada quien crea las suyas, sin dueño
-/tec/data-steward-agentico/sesiones/
+/tec/data-steward-agentico/interfaces/                             @yaelgl @VictorinoStylo @MasterJuan579
+
+# Sesiones: cada quien crea y edita las suyas (AAAA-MM-DD-<rama>-<tema>.md)
+/tec/data-steward-agentico/sesiones/                               @MasterJuan579

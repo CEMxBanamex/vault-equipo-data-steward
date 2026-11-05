@@ -20,8 +20,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Frontmatter, enlaces y sección automática
-        run: python scripts/validar_vault.py --base "origin/${{ github.base_ref }}"
+      - name: Frontmatter, enlaces, sección automática y áreas
+        run: python scripts/validar_vault.py --base "origin/${{ github.base_ref }}" --rama "${{ github.head_ref }}"
 
       - name: Buscar secretos con gitleaks
         run: |

@@ -26,3 +26,11 @@ resumen: El vault del proyecto se comparte con el equipo en un repo de la organi
 - **Alternativas descartadas:** que el Action fusionara las ramas en `main` automáticamente (sin revisión); propagar solo una vez al día; copiar el proyecto entre ambos vaults a mano.
 - **Archivos:** `vault-equipo-data-steward.zip` (CLAUDE.md y README del equipo, workflows, scripts, CODEOWNERS, integrantes y plantillas).
 - **Enlaces:** [[tec/data-steward-agentico/plan-de-trabajo/_index|plan de trabajo]]
+
+
+## Actualización 2026-11-04 (revisión automática de áreas)
+- El check `Validar vault` ahora también revisa que cada integrante solo modifique, borre o renombre archivos de sus áreas, según `.github/CODEOWNERS` e `.github/integrantes.txt`.
+- Fuera de sus áreas solo puede crear o editar sus propuestas (`propuesta-<tema>-<rama>.md`) y sus sesiones (`sesiones/AAAA-MM-DD-<rama>-<tema>.md`).
+- La rama `juan-pablo` queda exenta: puede modificar todo.
+- `CODEOWNERS` sigue avisando a los dueños, pero su aprobación no es obligatoria, para no crear cuellos de botella.
+- Las notas nuevas de tools y el `_index.md` de `tools/` quedan a cargo de Juan Pablo; los dueños de agente también editan la nota de su agente.

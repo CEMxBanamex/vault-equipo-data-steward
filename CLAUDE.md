@@ -12,17 +12,21 @@ El proyecto vive en `tec/data-steward-agentico/`. Empieza por su `CLAUDE.md`.
 - Dile qué notas cargaste antes de empezar.
 
 ## Dueños por área
-Solo los dueños editan notas existentes de su área. Cualquiera puede crear notas nuevas de tipo `propuesta` en cualquier área.
-
-**juan-pablo puede modificar todo el vault**, incluidas las áreas y sesiones de los demás, como responsable de la organización del proyecto.
+Solo los dueños editan notas existentes de su área. **juan-pablo puede modificar todo el vault**, incluidas las áreas y sesiones de los demás, como responsable de la organización del proyecto.
 
 | Área | Dueños |
 |---|---|
 | `arquitectura/`, `plan-de-trabajo/`, `producto/`, `CLAUDE.md`, workflows y scripts | juan-pablo |
-| `tools/` | Cada tool, su responsable (ver el índice de `tools/`) y juan-pablo |
-| `agentes/`, `modelos/`, `chat/` | carlos-delgado, carlos-ramos (y juan-pablo) |
-| `interfaces/` | yael, mauricio (y juan-pablo) |
-| `sesiones/` | Cada quien sus propias sesiones (y juan-pablo) |
+| `tools/` | Cada nota de tool, su responsable (ver el índice de `tools/`); el `_index.md` y las notas nuevas, juan-pablo |
+| `agentes/`, `modelos/`, `chat/` | carlos-delgado, carlos-ramos; cada dueño de agente también edita la nota de su agente |
+| `interfaces/` | yael, mauricio |
+| `sesiones/` | Cada quien las suyas |
+
+La fuente de verdad de los dueños es `.github/CODEOWNERS`.
+
+**Esto lo revisa el check "Validar vault" en cada PR.** Si modificas, borras o renombras un archivo que no es de tu área, el PR no se puede fusionar. Fuera de tus áreas solo puedes crear o editar:
+- Tus propuestas: `<carpeta>/propuesta-<tema>-<tu-rama>.md`.
+- Tus sesiones: `sesiones/AAAA-MM-DD-<tu-rama>-<tema>.md`.
 
 ## Reglas para no tener conflictos en Git
 1. **Notas nuevas en lugar de editar notas ajenas.** Para cambiar algo de otra área, crea `<area>/propuesta-<tema>-<tu-rama>.md` con la plantilla `_equipo/plantillas/propuesta.md`. El dueño la integra.
