@@ -40,3 +40,10 @@ resumen: El vault del proyecto se comparte con el equipo en un repo de la organi
 - Parte del equipo usa ChatGPT y Gemini. Sus apps web solo se conectan a servidores MCP remotos, así que no pueden usar el MCP de Obsidian, que es local.
 - Se agregaron a la raíz del repo `AGENTS.md` y `GEMINI.md` con las reglas del vault, para los agentes de terminal que trabajen dentro del repo.
 - El `README.md` del repo tiene una sección para usar ChatGPT o Gemini, en terminal o en la web, con un prompt de inicio.
+
+
+## Actualización 2026-11-09 (novedades.md)
+- **Qué es:** `tec/data-steward-agentico/novedades.md`, un resumen de los últimos 20 cambios que llegaron a `main` (un cambio = un PR fusionado o un push directo), agrupados por fecha y PR. Cada cambio lista sus notas con liga y `resumen`, poniendo primero las decisiones y las notas nuevas; si son más de 6, resume el resto por carpeta. Los cambios fuera del proyecto (`CLAUDE.md`, `AGENTS.md`, workflows, scripts) van en una línea "Cambios en el repo", porque pueden cambiar las reglas que siguen los LLM.
+- **Para qué:** que cualquier LLM (Claude, ChatGPT o Gemini) sepa qué cambió y dónde buscarlo. `CLAUDE.md`, `AGENTS.md`, `GEMINI.md` y el `CLAUDE.md` del proyecto les piden leerlo al empezar.
+- **Cómo se genera:** el script `scripts/generar_novedades.py` corre en el workflow de sincronización junto con los índices, a partir del historial de `main`. Ignora los commits del bot y no reescribe el archivo si nada cambió. Nadie lo edita a mano.
+- **Alternativa descartada:** que cada quien anotara sus cambios a mano en un mismo archivo; causaría conflictos y se dejaría de actualizar.

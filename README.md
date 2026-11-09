@@ -29,7 +29,7 @@ Memoria compartida del proyecto en Obsidian: decisiones, arquitectura, agentes, 
 
 ## Día a día
 
-1. Abre Obsidian (hace pull de tu rama).
+1. Abre Obsidian (hace pull de tu rama) y revisa `tec/data-steward-agentico/novedades.md` para ver qué cambió.
 2. Trabaja en tus áreas. Para notas nuevas, usa las plantillas de `_equipo/plantillas/`.
 3. Obsidian Git sube tus cambios a tu rama.
 4. Cuando algo esté listo para el equipo, abre un **Pull Request de tu rama a `main`** en GitHub.
@@ -61,7 +61,7 @@ Luego cierra el issue.
 | Workflow | Cuándo corre | Qué hace |
 |---|---|---|
 | `validar-vault.yml` | En cada Pull Request a `main` | Revisa frontmatter, enlaces, la sección automática de los índices y busca secretos |
-| `sincronizar.yml` | En cada cambio a `main`, a diario a medianoche y a mano | Regenera los índices y propaga `main` a la rama de cada integrante |
+| `sincronizar.yml` | En cada cambio a `main`, a diario a medianoche y a mano | Regenera los índices y `novedades.md`, y propaga `main` a la rama de cada integrante |
 
 ## Usar ChatGPT o Gemini con el vault
 
