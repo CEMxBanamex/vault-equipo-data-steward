@@ -62,3 +62,15 @@ Luego cierra el issue.
 |---|---|---|
 | `validar-vault.yml` | En cada Pull Request a `main` | Revisa frontmatter, enlaces, la sección automática de los índices y busca secretos |
 | `sincronizar.yml` | En cada cambio a `main`, a diario a medianoche y a mano | Regenera los índices y propaga `main` a la rama de cada integrante |
+
+## Usar ChatGPT o Gemini con el vault
+
+El MCP de Obsidian solo funciona con Claude Desktop, porque es local. ChatGPT y Gemini en la web solo se conectan a servidores MCP remotos, así que no pueden usarlo. Tienes dos opciones:
+
+**1. Un agente de terminal dentro del repo (recomendado).** Abre la terminal en la carpeta del repo, en tu rama, y usa la CLI de tu asistente (por ejemplo Gemini CLI, Antigravity CLI o la CLI de OpenAI). Lee las notas como archivos y sigue las reglas de `AGENTS.md` o `GEMINI.md`. Revisa con `git status` lo que cambió antes de hacer commit.
+
+**2. ChatGPT o Gemini en la web.** Pega el enlace de la nota en GitHub o súbela como archivo. Empieza la conversación con:
+
+> Trabajo en el vault del equipo Data Steward Agéntico. Mi rama es `<tu-rama>`. Sigue las reglas de AGENTS.md: solo propongo cambios en mis áreas, las notas nuevas llevan frontmatter con tipo, fecha, autor y resumen, y los enlaces usan la ruta completa desde la raíz.
+
+Después copia el resultado a la nota en Obsidian.
