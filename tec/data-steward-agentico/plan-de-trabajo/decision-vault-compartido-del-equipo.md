@@ -34,3 +34,9 @@ resumen: El vault del proyecto se comparte con el equipo en un repo de la organi
 - La rama `juan-pablo` queda exenta: puede modificar todo.
 - `CODEOWNERS` sigue avisando a los dueños, pero su aprobación no es obligatoria, para no crear cuellos de botella.
 - Las notas nuevas de tools y el `_index.md` de `tools/` quedan a cargo de Juan Pablo; los dueños de agente también editan la nota de su agente.
+
+
+## Actualización 2026-11-09 (otros asistentes de IA)
+- Parte del equipo usa ChatGPT y Gemini. Sus apps web solo se conectan a servidores MCP remotos, así que no pueden usar el MCP de Obsidian, que es local.
+- Se agregaron a la raíz del repo `AGENTS.md` y `GEMINI.md` con las reglas del vault, para los agentes de terminal que trabajen dentro del repo.
+- El `README.md` del repo tiene una sección para usar ChatGPT o Gemini, en terminal o en la web, con un prompt de inicio.
