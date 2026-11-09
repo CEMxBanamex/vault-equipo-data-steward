@@ -57,3 +57,8 @@ Backend en FastAPI + LangGraph, tools en un servidor MCP, frontend en Vite + Rea
   - Sesiones nuevas como `sesiones/AAAA-MM-DD-<rama>-<tema>.md`.
   - No editar la sección automática de los `_index.md`.
   - Campo `autor` (nombre de rama) en el frontmatter de notas nuevas.
+
+
+## Actualización 2026-11-09 (novedades)
+- Al empezar, lee [[tec/data-steward-agentico/novedades|novedades]]: lista los últimos 20 cambios que llegaron a `main`, agrupados por fecha y PR, con liga a cada nota y su resumen. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder.
+- `novedades.md` lo genera GitHub Actions en cada cambio a `main`; nadie lo edita a mano.

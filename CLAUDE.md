@@ -6,6 +6,9 @@ Este repo es la memoria compartida del proyecto para el Equipo 1. Lo usamos las 
 
 El proyecto vive en `tec/data-steward-agentico/`. Empieza por su `CLAUDE.md`.
 
+## Al empezar
+Lee `tec/data-steward-agentico/novedades.md`: lista los últimos 20 cambios que llegaron a `main`, con liga a cada nota. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder. Ese archivo lo genera GitHub Actions; nadie lo edita.
+
 ## Antes de escribir (para Claude)
 - Pregunta quién es la persona con la que trabajas si no lo sabes: su nombre de rama (`juan-pablo`, `iris`, `mario`, `carlos-delgado`, `carlos-ramos`, `yael`, `mauricio`) va en el campo `autor` y decide qué áreas puede editar.
 - Revisa la tabla de dueños. Si te piden cambiar una nota de un área que no es de esa persona, no la edites: crea una propuesta (ver abajo).
@@ -31,7 +34,7 @@ La fuente de verdad de los dueños es `.github/CODEOWNERS`.
 ## Reglas para no tener conflictos en Git
 1. **Notas nuevas en lugar de editar notas ajenas.** Para cambiar algo de otra área, crea `<area>/propuesta-<tema>-<tu-rama>.md` con la plantilla `_equipo/plantillas/propuesta.md`. El dueño la integra.
 2. **Sesiones con autor en el nombre:** `sesiones/AAAA-MM-DD-<tu-rama>-<tema>.md`. Así dos sesiones del mismo día nunca chocan.
-3. **No edites la sección automática de los `_index.md`** (entre `<!-- indice-automatico:inicio -->` y `<!-- indice-automatico:fin -->`). La regenera GitHub Actions. El resto del índice lo edita su dueño.
+3. **No edites `novedades.md` ni la sección automática de los `_index.md`** (entre `<!-- indice-automatico:inicio -->` y `<!-- indice-automatico:fin -->`). La regenera GitHub Actions. El resto del índice lo edita su dueño.
 4. **Nunca borres ni sobrescribas notas.** Para corregir algo, el dueño agrega una sección nueva con fecha al final.
 5. **Frontmatter obligatorio** en toda nota nueva: `tipo`, `fecha` (AAAA-MM-DD), `autor` (tu rama) y `resumen` (una línea). Usa las plantillas de `_equipo/plantillas/`.
 6. **Enlaces con ruta completa desde la raíz:** `[[tec/data-steward-agentico/tools/_index|tools]]`. En una tabla, escapa la barra: `\|`.

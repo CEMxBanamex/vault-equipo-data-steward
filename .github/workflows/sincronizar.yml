@@ -1,6 +1,6 @@
 name: Sincronizar vault
 
-# En cada cambio a main: regenera los índices automáticos y propaga main
+# En cada cambio a main: regenera los índices y novedades.md, y propaga main
 # a la rama de cada integrante. Corre también a diario como respaldo.
 on:
   push:
@@ -36,12 +36,13 @@ jobs:
           git config user.name "vault-bot"
           git config user.email "vault-bot@users.noreply.github.com"
 
-      - name: Regenerar índices automáticos
+      - name: Regenerar índices automáticos y novedades
         run: |
           python scripts/generar_indices.py
+          python scripts/generar_novedades.py
           if [[ -n "$(git status --porcelain)" ]]; then
             git add tec
-            git commit -m "chore: regenerar índices automáticos [skip ci]"
+            git commit -m "chore: regenerar índices y novedades [skip ci]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
