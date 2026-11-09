@@ -22,3 +22,18 @@ resumen: Agente del chat que responde dudas de gobernanza de datos: políticas, 
 - **Dueño:** Mario (prompt, pruebas y evaluación). **Apoyo:** Iris y Juan Pablo.
 - **Tools y sus responsables:** `consultar_glosario` (Mario), `consultar_calidad` (Iris), `consultar_catalogo` (Juan Pablo), `buscar_politicas` (Carlos Delgado / Carlos Ramos).
 - Ver [[tec/data-steward-agentico/plan-de-trabajo/decision-reparto-de-tools-y-subequipos-de-agentes|subequipos de agentes]].
+
+
+## Actualización 2026-11-09 (Mario)
+Fuentes listas para las preguntas de ejemplo de esta nota:
+
+| Pregunta | Tool | Lo que responde |
+|---|---|---|
+| ¿Quién es el dueño de los datos de proveedores? | `buscar_politicas` (tipo `gobernanza`) o `consultar_catalogo` | P-021 §3: Dirección de Compras; data steward, Datos Maestros de Compras |
+| ¿El RFC es dato sensible? | `buscar_politicas` (tipo `gobernanza`) | P-020 §3: sí en personas físicas (clientes), interno en personas morales (proveedores) |
+| ¿Qué reglas de calidad aplican a la tabla de facturas? | `consultar_calidad` | 5 reglas; 3 no alcanzan su umbral |
+| ¿Qué significa factura conciliada? | `consultar_glosario` | Definición, dueño y fuente (métrica `tasa_conciliacion`) |
+
+- El catálogo de datos (34 fichas con data owner, data steward, sensibilidad, origen y columnas) ya está en las tablas `catalogo_tablas` y `catalogo_columnas` para `consultar_catalogo` (Juan Pablo).
+- Las 4 políticas de gobernanza (P-020 a P-023) llevan `tipo: gobernanza`; las de facturas, `tipo: facturas`.
+- Pendiente: prompt y conjunto de preguntas de prueba con su fuente esperada.
