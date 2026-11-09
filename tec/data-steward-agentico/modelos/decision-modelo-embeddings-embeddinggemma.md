@@ -50,3 +50,4 @@ La similitud coseno indica cercanía entre vectores; no es una probabilidad de q
 - **Enlaces:**
   - [[tec/data-steward-agentico/modelos/_index|Modelos]]
   - [[tec/data-steward-agentico/modelos/mismo-modelo-de-embeddings|Mismo modelo para documentos y consultas]]
+  -
