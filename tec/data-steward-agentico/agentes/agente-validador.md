@@ -27,3 +27,10 @@ resumen: Segundo agente del grafo de casos: corre las reglas deterministas y bus
 - **Qué hace el LLM del validador:** busca con [[tec/data-steward-agentico/tools/buscar-politicas|buscar_politicas]] (tipo `facturas`, o `gobernanza` en la Historia 2) el fragmento que sustenta cada hallazgo y lo pasa al Redactor con política, versión y sección. No cambia el resultado.
 - **Riesgo abierto:** sin confianza por campo del modelo de visión, R-003 no se evalúa. Ver [[tec/data-steward-agentico/modelos/propuesta-confianza-y-evaluacion-vision-iris|propuesta]].
 - **Evaluación:** 39 casos de referencia con resultado y reglas esperadas; `scripts/evaluar.py` da la matriz de confusión y los falsos aceptados.
+
+
+## Actualización 2026-11-09 (tarde: nodo de código y corrección del filtro)
+- **Corrección a la sección anterior:** el validador **no** debe filtrar `buscar_politicas` por `tipo`. R-002 se sustenta en P-011 (tipo `gobernanza`) y con `tipo=facturas` recibe P-001; las 6 reglas de la Historia 2 se quedan sin política. Se busca por `reglas=[regla_id]` e `historia`.
+- **Cita exacta sin RAG:** cada hallazgo de `validar_reglas` trae ahora `politica_version` y `politica_seccion` del catálogo. El RAG solo aporta el texto de la sección para el Redactor.
+- **Propuesta: nodo de código.** `steward_datos.validador.preparar_para_redactor` junta el resultado, las citas y el texto de cada sección, y emite los pasos. Es reproducible, no usa GPU y ningún modelo puede cambiar el resultado. Si el equipo prefiere LLM, el prompt está en `datos/agentes/validador.md`.
+- **Evaluación:** `scripts/evaluar_validador.py` tiene tres modos: `citas` (sin LLM, 20/20 reglas encuentran su sección), `entradas` (las 39 entradas de evaluación) y `respuestas` (resultado, reglas, citas y falsos aceptados). El nodo de código da 39/39, sin falsos aceptados.

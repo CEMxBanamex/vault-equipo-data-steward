@@ -26,3 +26,8 @@ resumen: Evalúa en código las reglas del catálogo sobre los campos extraídos
 - **Lee de la base:** padrón de proveedores (R-017), entidades receptoras (R-018) y facturas anteriores para duplicados (R-015). No escribe; guardar es tarea de `registrar_hallazgo` o de `persistencia.guardar_resultado`.
 - **Precedencia:** revisión humana > rechazo > aceptado. Ver la actualización del [[tec/data-steward-agentico/agentes/agente-validador|Validador]].
 - **Catálogo:** 20 reglas en `datos/reglas/catalogo.yaml`; tabla legible en `docs/datos/catalogo_reglas.md`.
+
+
+## Actualización 2026-11-09 (tarde)
+- **Hallazgos con cita completa:** `HallazgoOut` agrega `politica_version` y `politica_seccion` (opcionales, del catálogo). No cambia cómo se guardan.
+- **R-003 sin confianza:** si el modelo de visión no da confianza en un campo usado por las reglas, ya no se omite en silencio: se agrega un hallazgo R-003 que lista esos campos. Con `sin_confianza: informativo` (por defecto) no cambia el resultado; con `revision`, el caso va a revisión humana. Se cambia en `datos/reglas/catalogo.yaml`.
