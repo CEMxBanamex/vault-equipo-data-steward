@@ -37,3 +37,10 @@ Fuentes listas para las preguntas de ejemplo de esta nota:
 - El catálogo de datos (34 fichas con data owner, data steward, sensibilidad, origen y columnas) ya está en las tablas `catalogo_tablas` y `catalogo_columnas` para `consultar_catalogo` (Juan Pablo).
 - Las 4 políticas de gobernanza (P-020 a P-023) llevan `tipo: gobernanza`; las de facturas, `tipo: facturas`.
 - Pendiente: prompt y conjunto de preguntas de prueba con su fuente esperada.
+
+
+## Actualización 2026-11-09 (prompt y evaluación)
+- **Prompt:** `datos/agentes/gobernanza.md` en el repo de código. Usa 4 tools, cita cada fuente con su identificador exacto y termina con la línea `Fuentes: …`. Si no hay fuente empieza con "No encontré"; si la pregunta es de cifras o de un caso responde "Esta pregunta no es de gobernanza.". El rol sale del JWT, no del texto.
+- **Preguntas de prueba:** 35 en `datos/evaluacion/preguntas_gobernanza.yaml` (14 de políticas, 6 de glosario, 4 de catálogo, 3 de calidad, 4 sin fuente, 1 mixta, 2 fuera de dominio y 2 de seguridad), cada una con tool, fuente y lo que debe decir.
+- **Evaluación:** `scripts/evaluar_gobernanza.py fuentes` revisa sin LLM que cada fuente exista y diga lo esperado (35/35). `respuestas --archivo salidas.jsonl` califica al agente: tool, cita, contenido, comportamiento y fugas de datos personales.
+- **Pendiente:** conectar con Carlos Ramos y correr `respuestas` con el modelo del chat. Necesita `consultar_catalogo` (Juan Pablo).

@@ -16,3 +16,10 @@ resumen: Ofrecer a los Carlos la implementación de buscar_politicas y la ingest
 - **Calibración:** con vectores de prueba sin GPU da 70 % en el primer lugar y 93 % en los primeros 5. Falta correrla con `embeddinggemma` y fijar `RAG_UMBRAL_SIMILITUD`: en su prueba las similitudes correctas fueron de 0.39 a 0.56, así que el valor de 0.30 puede quedar bajo.
 - **Por qué:** se construyó antes del reparto del 4 nov.; puede ahorrarles trabajo, pero la decisión es suya.
 - **Estado:** pendiente
+
+
+## Actualización 2026-11-09 (umbral y filtro por regla)
+- **Calibración:** `scripts/evaluar_rag.py --calibrar` mide sin umbral la similitud del fragmento correcto y la de 6 preguntas sin política, y recomienda `RAG_UMBRAL_SIMILITUD` (conservador y equilibrado). Falta correrlo con `embeddinggemma:300m` en la laptop de embeddings.
+- **Propuesta nueva:** no aplicar el umbral cuando la búsqueda filtra por `reglas`. Así se pide la sección exacta de una regla; con el modelo real, un umbral de 0.30 podría descartarla y el caso iría a revisión por "sin política".
+- **Para el validador:** buscar por `reglas` e `historia`, no por `tipo`. Con `tipo=facturas`, R-002 recibe P-001 en lugar de P-011 y las reglas de la Historia 2 no reciben política.
+- **Relación con la [[tec/data-steward-agentico/modelos/decision-modelo-embeddings-embeddinggemma|decisión de embeddings]]:** cubre dos de sus pendientes. "Consultas sin información relevante" son las 6 preguntas sin política de `preguntas_rag.yaml`, y "integrar los vectores en la base" es la ingesta del frente de datos (`politica_fragmentos`, 768 dimensiones, con el modelo guardado en cada vector).

@@ -19,3 +19,10 @@ resumen: Las vistas, el usuario de solo lectura, el registro de consultas y el c
   - Que Infraestructura cree los usuarios `steward_backend`, `steward_mcp` y `steward_consultas` antes de correr las migraciones, para que se otorguen los permisos.
 - **Por qué:** así la consulta libre usa los mismos permisos que las métricas y el catálogo no se duplica.
 - **Estado:** pendiente
+
+
+## Actualización 2026-11-09 (verificado)
+- **El riesgo es real y más amplio:** reproducido con `steward_consultas`. Incluso en un solo SELECT (`SELECT count(*) FROM (SELECT set_config('app.rol','administrador',true)) s, LATERAL (SELECT * FROM v_clientes) c`) un analista ve los 600 clientes con RFC completo. Validar "un solo SELECT" no basta.
+- **Ya en el repo de código (migración `0003`):** se quita `set_config` a `PUBLIC` y se deja solo a `steward_backend`, `steward_mcp` y a quien migra. `fijar_en_bd` ahora usa `SET LOCAL` con rol y usuario validados, así que funciona con `steward_consultas`. Hay pruebas del ataque.
+- **Ojo en RDS:** si el usuario maestro no es dueño de `set_config`, el `REVOKE` no hace nada sin dar error. La migración lo detecta y avisa con un `WARNING`; en ese caso hay que pedirlo a soporte o quedarse solo con la validación del SQL.
+- **Sigue siendo necesario:** la lista blanca de funciones en `sqlglot` y conectarse como `steward_consultas`.
