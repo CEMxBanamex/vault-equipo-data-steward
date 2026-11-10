@@ -14,6 +14,10 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-10
 
+### Documentar inventario de GPUs y reparto propuesto de modelos · carlos-delgado · PR #8
+- **Nueva:** [[tec/data-steward-agentico/modelos/inventario-gpus-y-reparto-modelos|inventario-gpus-y-reparto-modelos]]
+  Inventario de las cinco GPUs del equipo y propuesta inicial de reparto para visión, chat, embeddings y respaldo.
+
 ### Frente de datos: validar_reglas, consultar_calidad y sesión de configuración · iris · PR #7
 - **Nueva:** [[tec/data-steward-agentico/modelos/propuesta-confianza-y-evaluacion-vision-iris|propuesta-confianza-y-evaluacion-vision-iris]]
   Pedir confianza por campo al modelo de visión y medirlo con las facturas sintéticas que ya tienen respuesta esperada.
