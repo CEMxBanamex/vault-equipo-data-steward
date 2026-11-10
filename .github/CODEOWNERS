@@ -38,3 +38,12 @@
 
 # Sesiones: cada quien crea y edita las suyas (AAAA-MM-DD-<rama>-<tema>.md)
 /tec/data-steward-agentico/sesiones/                               @MasterJuan579
+
+# Tareas: cada quien edita solo su archivo; _index.md y _tablero.md (lo genera el bot) son de Juan Pablo
+/tec/data-steward-agentico/tareas/                                 @MasterJuan579
+/tec/data-steward-agentico/tareas/iris.md                          @Iris-Giselle-Balderas-Arreola @MasterJuan579
+/tec/data-steward-agentico/tareas/mario.md                         @oropeza-m @MasterJuan579
+/tec/data-steward-agentico/tareas/carlos-delgado.md                @CDV-97 @MasterJuan579
+/tec/data-steward-agentico/tareas/carlos-ramos.md                  @Cmrg80 @MasterJuan579
+/tec/data-steward-agentico/tareas/yael.md                          @yaelgl @MasterJuan579
+/tec/data-steward-agentico/tareas/mauricio.md                      @VictorinoStylo @MasterJuan579

@@ -1,12 +1,13 @@
 name: Sincronizar vault
 
-# En cada cambio a main: regenera los índices y novedades.md, y propaga main
-# a la rama de cada integrante. Corre también a diario como respaldo.
+# En cada cambio a main y cada 15 minutos: publica en main el archivo de tareas
+# de cada integrante, regenera los índices, el tablero de tareas y novedades.md,
+# y propaga main a la rama de cada integrante.
 on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 6 * * *"  # 00:00 en la Ciudad de México
+    - cron: "*/15 * * * *"  # tareas y tablero; incluye la medianoche de la Ciudad de México
   workflow_dispatch:
 
 concurrency:
@@ -36,13 +37,28 @@ jobs:
           git config user.name "vault-bot"
           git config user.email "vault-bot@users.noreply.github.com"
 
-      - name: Regenerar índices automáticos y novedades
+      - name: Instalar gitleaks
+        run: |
+          curl -sSL -o gitleaks.tar.gz \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz
+          tar -xzf gitleaks.tar.gz gitleaks
+          rm gitleaks.tar.gz
+
+      - name: Publicar las tareas de cada integrante
+        env:
+          GH_TOKEN: ${{ secrets.VAULT_BOT_TOKEN }}
+        run: python scripts/publicar_tareas.py
+
+      - name: Regenerar índices, tablero de tareas y novedades
         run: |
           python scripts/generar_indices.py
+          python scripts/generar_tablero.py
           python scripts/generar_novedades.py
-          if [[ -n "$(git status --porcelain)" ]]; then
+          if [[ -n "$(git status --porcelain -- tec)" ]]; then
             git add tec
-            git commit -m "chore: regenerar índices y novedades [skip ci]"
+            git commit -m "chore: regenerar índices, tablero y novedades [skip ci]"
+          fi
+          if [[ -n "$(git log origin/main..HEAD --oneline)" ]]; then
             git pull --rebase origin main
             git push origin HEAD:main
           fi

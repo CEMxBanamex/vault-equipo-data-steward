@@ -19,7 +19,13 @@ Lee `tec/data-steward-agentico/novedades.md`: lista los últimos 20 cambios que 
 - Enlaces con ruta completa desde la raíz: `[[tec/data-steward-agentico/tools/_index|tools]]`. En tablas, escapa la barra: `\|`.
 - No edites la sección entre `<!-- indice-automatico:inicio -->` y `<!-- indice-automatico:fin -->` de los `_index.md`.
 - Nunca borres ni sobrescribas notas. Las correcciones las hace el dueño con una sección nueva con fecha al final.
-- No toques `.github/`, `scripts/`, `CLAUDE.md`, `AGENTS.md`, `GEMINI.md` ni `novedades.md`.
+- No toques `.github/`, `scripts/`, `CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `novedades.md` ni `tareas/_tablero.md`.
+
+## Tareas
+- Al empezar, lee `tec/data-steward-agentico/tareas/_tablero.md` y el archivo de tareas de la persona: `tec/data-steward-agentico/tareas/<rama>.md`.
+- Formato de una tarea (ver `tareas/_index.md`): `- [ ] **S1-01** Título · vence: AAAA-MM-DD · listo cuando: ...`. Estados: `[ ]` pendiente, `[/]` en proceso, `[x]` listo, `[!]` bloqueado con `· bloqueo: <motivo>`.
+- Cuando la persona termine algo que corresponde a una tarea, propón marcarla. Cambia solo la casilla y, si hace falta, `bloqueo` o `nota`.
+- Nunca edites el archivo de tareas de otra persona. Las tareas propias nuevas usan el ID `<rama>-<nn>`.
 - Nada de credenciales, tokens ni datos reales del socio formador. El repo es público.
 - No inventes contexto: si no leíste una nota, no respondas como si la conocieras.
 

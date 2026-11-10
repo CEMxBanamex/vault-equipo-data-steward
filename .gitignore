@@ -5,3 +5,9 @@
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Binario que descarga el workflow de sincronización
+gitleaks
+
+# Python
+__pycache__/
