@@ -66,6 +66,10 @@ _No edites esta sección: la regenera GitHub Actions en cada cambio a main._
 
 | Nota | Tipo | Autor | Fecha | Resumen |
 |---|---|---|---|---|
+| [[tec/data-steward-agentico/tools/propuesta-buscar-politicas-referencia-mario\|propuesta-buscar-politicas-referencia-mario]] | propuesta | mario | 2026-11-09 | Ofrecer a los Carlos la implementación de buscar_politicas y la ingesta al RAG que ya están en el repo de código, alineadas con embeddinggemma de 768 dimensiones. |
+| [[tec/data-steward-agentico/tools/propuesta-consultar-caso-y-buscar-facturas-mario\|propuesta-consultar-caso-y-buscar-facturas-mario]] | propuesta | mario | 2026-11-09 | Ofrecer a Mauricio las implementaciones de consultar_caso y buscar_facturas y los datos que ya tiene la base para probarlas. |
+| [[tec/data-steward-agentico/tools/propuesta-registrar-hallazgo-y-bitacora-mario\|propuesta-registrar-hallazgo-y-bitacora-mario]] | propuesta | mario | 2026-11-09 | Ofrecer a Yael la implementación de registrar_hallazgo y describir la bitácora de la base para consultar_bitacora. |
+| [[tec/data-steward-agentico/tools/propuesta-vistas-para-consulta-libre-mario\|propuesta-vistas-para-consulta-libre-mario]] | propuesta | mario | 2026-11-09 | Las vistas, el usuario de solo lectura, el registro de consultas y el catálogo ya están en la base para ejecutar_consulta, listar_vistas_consultables y consultar_catalogo; falta bloquear set_config en la validación del SQL. |
 | [[tec/data-steward-agentico/tools/buscar-facturas\|buscar-facturas]] | tool |  | 2026-11-04 | Lista facturas concretas con filtros predefinidos (proveedor, fechas, resultado, regla). |
 | [[tec/data-steward-agentico/tools/buscar-politicas\|buscar-politicas]] | tool |  | 2026-11-04 | Búsqueda semántica en el RAG (pgvector) de políticas de facturas o de gobernanza, con fuente, versión y vigencia de cada fragmento. |
 | [[tec/data-steward-agentico/tools/consultar-bitacora\|consultar-bitacora]] | tool |  | 2026-11-04 | Consulta la bitácora de auditoría con filtros: quién hizo qué, sobre qué caso y cuándo. |
