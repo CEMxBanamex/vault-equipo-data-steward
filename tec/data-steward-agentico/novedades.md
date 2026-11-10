@@ -12,6 +12,21 @@ Muestra los últimos 20 cambios, del más reciente al más antiguo. Si una noved
 
 ## 2026-11-09
 
+### Mario · mario · PR #5
+- **Nueva:** [[tec/data-steward-agentico/plan-de-trabajo/propuesta-avance-frente-datos-mario|propuesta-avance-frente-datos-mario]]
+  Registrar en el plan el avance del frente de datos y los supuestos sobre los datos de negocio.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-09-mario-frente-de-datos|2026-11-09-mario-frente-de-datos]]
+  Frente de datos con Iris (4 al 9 nov.); de mi parte quedaron las vistas con seguridad por fila, los datos de negocio, el catálogo, el glosario, las métricas, las políticas de gobernanza, obtener_metrica y consultar_glosario.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-09-mario-gobernanza-y-seguridad|2026-11-09-mario-gobernanza-y-seguridad]]
+  Prompt y 35 preguntas de prueba del agente de gobernanza, cierre del hueco de set_config en la seguridad por fila y calibración del umbral del RAG.
+- **Nueva:** [[tec/data-steward-agentico/tools/propuesta-buscar-politicas-referencia-mario|propuesta-buscar-politicas-referencia-mario]]
+  Ofrecer a los Carlos la implementación de buscar_politicas y la ingesta al RAG que ya están en el repo de código, alineadas con embeddinggemma de 768 dimensiones.
+- **Nueva:** [[tec/data-steward-agentico/tools/propuesta-consultar-caso-y-buscar-facturas-mario|propuesta-consultar-caso-y-buscar-facturas-mario]]
+  Ofrecer a Mauricio las implementaciones de consultar_caso y buscar_facturas y los datos que ya tiene la base para probarlas.
+- **Nueva:** [[tec/data-steward-agentico/tools/propuesta-registrar-hallazgo-y-bitacora-mario|propuesta-registrar-hallazgo-y-bitacora-mario]]
+  Ofrecer a Yael la implementación de registrar_hallazgo y describir la bitácora de la base para consultar_bitacora.
+- **4 notas más** en `agentes/`, `tools/`
+
 ### Documentar selección de embeddinggemma:300m · carlos-delgado · PR #2
 - **Nueva:** [[tec/data-steward-agentico/modelos/decision-modelo-embeddings-embeddinggemma|decision-modelo-embeddings-embeddinggemma]]
   Seleccionar embeddinggemma:300m para los embeddings del prototipo tras una prueba inicial de recuperación.

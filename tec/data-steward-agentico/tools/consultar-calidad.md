@@ -17,3 +17,11 @@ resumen: Devuelve las reglas de calidad de una tabla y sus últimos resultados.
 
 ## Actualización 2026-11-04
 - **Implementa:** Iris (antes Iris / Mario), porque ella define las reglas de calidad. Ver [[tec/data-steward-agentico/plan-de-trabajo/decision-reparto-de-tools-y-subequipos-de-agentes|reparto de tools]].
+
+
+## Actualización 2026-11-09 (implementación)
+- **Estado:** lista, con pruebas. Código: `datos/steward_datos/tools/consultar_calidad.py`.
+- **Recibe:** `tabla` (acepta `facturas`, `v_facturas` o "tabla de facturas") y `dimension` opcional (completitud, unicidad, validez, oportunidad, consistencia).
+- **Devuelve:** por regla, descripción, dimensión, umbral, último porcentaje, el anterior, si cumple el umbral, registros evaluados y fecha. Si la tabla no tiene reglas, `tablas_con_reglas` para que el agente lo diga.
+- **Reglas del piloto:** 13 (RC-001 a RC-013) en `datos/gobernanza/calidad.yaml`, con la política P-022. En facturas, 3 de 5 no alcanzan su umbral (folio completo, folio único y total consistente): sirve para la demo del agente de gobernanza.
+- **Paso:** "Revisando reglas de calidad de facturas…".
