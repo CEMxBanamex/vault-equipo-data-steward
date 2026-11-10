@@ -12,6 +12,12 @@ Muestra los últimos 20 cambios, del más reciente al más antiguo. Si una noved
 
 ## 2026-11-09
 
+### Documentar selección de embeddinggemma:300m · carlos-delgado · PR #2
+- **Nueva:** [[tec/data-steward-agentico/modelos/decision-modelo-embeddings-embeddinggemma|decision-modelo-embeddings-embeddinggemma]]
+  Seleccionar embeddinggemma:300m para los embeddings del prototipo tras una prueba inicial de recuperación.
+- **Nueva:** [[tec/data-steward-agentico/modelos/decision-modelo-vision-gemma3|decision-modelo-vision-gemma3]]
+  Mantener gemma3:4b como candidato de visión para el prototipo y documentar sus resultados y limitaciones.
+
 ### ci: generar novedades.md en cada cambio a main · juan-pablo · PR #4
 - **Modificada:** [[tec/data-steward-agentico/plan-de-trabajo/decision-vault-compartido-del-equipo|decision-vault-compartido-del-equipo]]
   El vault del proyecto se comparte con el equipo en un repo de la organización, con una rama por integrante, PR a main y un Action que regenera índices y propaga main a todas las ramas.
