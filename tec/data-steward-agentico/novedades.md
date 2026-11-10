@@ -1,6 +1,6 @@
 ---
 tipo: novedades
-fecha: 2026-11-09
+fecha: 2026-11-10
 autor: vault-bot
 resumen: Los últimos 20 cambios que llegaron a main, con liga a cada nota. Léelo al empezar.
 ---
@@ -11,6 +11,23 @@ _Lo genera GitHub Actions en cada cambio a `main`. No lo edites a mano._
 Muestra los últimos 20 cambios, del más reciente al más antiguo. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder. Para cambios más antiguos, consulta el historial de Git de `main`.
 
 El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/tareas/_tablero|el tablero de tareas]].
+
+## 2026-11-10
+
+### Frente de datos: validar_reglas, consultar_calidad y sesión de configuración · iris · PR #7
+- **Nueva:** [[tec/data-steward-agentico/modelos/propuesta-confianza-y-evaluacion-vision-iris|propuesta-confianza-y-evaluacion-vision-iris]]
+  Pedir confianza por campo al modelo de visión y medirlo con las facturas sintéticas que ya tienen respuesta esperada.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-09-iris-configuracion-vault|2026-11-09-iris-configuracion-vault]]
+  Configuré Obsidian y Git para trabajar en el vault
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-09-iris-frente-de-datos|2026-11-09-iris-frente-de-datos]]
+  Frente de datos con Mario (4 al 9 nov.); de mi parte quedaron validar_reglas, consultar_calidad, las reglas de calidad, el catálogo de reglas y los casos de referencia del piloto.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-09-iris-validador|2026-11-09-iris-validador]]
+  Validador como nodo de código con cita exacta por hallazgo, corrección del filtro de buscar_politicas, R-003 sin confianza y evaluación del validador (39/39).
+- **Modificada:** [[tec/data-steward-agentico/agentes/agente-validador|agente-validador]]
+  Segundo agente del grafo de casos: corre las reglas deterministas y busca las políticas que las respaldan.
+- **Modificada:** [[tec/data-steward-agentico/tools/consultar-calidad|consultar-calidad]]
+  Devuelve las reglas de calidad de una tabla y sus últimos resultados.
+- **1 notas más** en `tools/`
 
 ## 2026-11-09
 
