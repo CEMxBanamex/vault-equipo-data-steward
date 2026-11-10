@@ -29,11 +29,23 @@ Memoria compartida del proyecto en Obsidian: decisiones, arquitectura, agentes, 
 
 ## Día a día
 
-1. Abre Obsidian (hace pull de tu rama) y revisa `tec/data-steward-agentico/novedades.md` para ver qué cambió.
+1. Abre Obsidian (hace pull de tu rama) y revisa `tec/data-steward-agentico/novedades.md` para ver qué cambió y `tec/data-steward-agentico/tareas/_tablero.md` para ver cómo va el equipo.
 2. Trabaja en tus áreas. Para notas nuevas, usa las plantillas de `_equipo/plantillas/`.
 3. Obsidian Git sube tus cambios a tu rama.
 4. Cuando algo esté listo para el equipo, abre un **Pull Request de tu rama a `main`** en GitHub.
 5. Al fusionarse, todos reciben el cambio en su rama en unos minutos.
+
+## Marcar tus tareas
+
+Tus tareas están en `tec/data-steward-agentico/tareas/<tu-rama>.md`.
+
+1. Cambia la casilla: `[ ]` pendiente, `[/]` en proceso, `[x]` listo, `[!]` bloqueado (agrega `· bloqueo: <motivo>` al final de la línea).
+2. Guarda. Obsidian Git lo sube a tu rama.
+3. **No necesitas Pull Request.** En unos 15 minutos el Action lo publica en `main` y actualiza el tablero.
+
+Desde la web también funciona: en GitHub, cambia a tu rama, abre tu archivo de tareas, edítalo con el lápiz y haz commit en tu rama.
+
+Si el formato tiene un error, GitHub te abre un issue con la línea a corregir. El formato completo está en `tareas/_index.md`.
 
 ## Reglas rápidas
 
@@ -60,8 +72,8 @@ Luego cierra el issue.
 
 | Workflow | Cuándo corre | Qué hace |
 |---|---|---|
-| `validar-vault.yml` | En cada Pull Request a `main` | Revisa frontmatter, enlaces, la sección automática de los índices y busca secretos |
-| `sincronizar.yml` | En cada cambio a `main`, a diario a medianoche y a mano | Regenera los índices y `novedades.md`, y propaga `main` a la rama de cada integrante |
+| `validar-vault.yml` | En cada Pull Request a `main` | Revisa frontmatter, enlaces, la sección automática de los índices, el formato de las tareas, las áreas y busca secretos |
+| `sincronizar.yml` | En cada cambio a `main`, cada 15 minutos y a mano | Publica en `main` el archivo de tareas de cada rama, regenera los índices, el tablero de tareas y `novedades.md`, y propaga `main` a la rama de cada integrante |
 
 ## Usar ChatGPT o Gemini con el vault
 

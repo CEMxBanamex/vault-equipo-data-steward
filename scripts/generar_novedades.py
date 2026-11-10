@@ -16,6 +16,7 @@ import sys
 RAIZ = Path(__file__).resolve().parent.parent
 PROYECTO = "tec/data-steward-agentico/"
 SALIDA = PROYECTO + "novedades.md"
+TAREAS = PROYECTO + "tareas/"  # su estado vive en tareas/_tablero.md, no aquí
 MAX_CAMBIOS = 20
 MAX_NOTAS_POR_CAMBIO = 6
 ZONA = ZoneInfo("America/Mexico_City")
@@ -124,7 +125,8 @@ def generar() -> str:
         if es_del_bot(c):
             continue
         archivos = archivos_cambiados(c)
-        notas = [(e, r) for e, r in archivos if r.startswith(PROYECTO) and r.endswith(".md")]
+        notas = [(e, r) for e, r in archivos
+                 if r.startswith(PROYECTO) and r.endswith(".md") and not r.startswith(TAREAS)]
         repo = [r for e, r in archivos if not r.startswith(PROYECTO)]
         if notas or repo:
             cambios.append((c, notas, repo))
@@ -150,6 +152,9 @@ def generar() -> str:
         f"Muestra los últimos {MAX_CAMBIOS} cambios, del más reciente al más antiguo. "
         "Si una novedad toca lo que te piden, abre la nota enlazada antes de responder. "
         "Para cambios más antiguos, consulta el historial de Git de `main`.",
+        "",
+        "El avance de las tareas no aparece aquí: está en "
+        "[[tec/data-steward-agentico/tareas/_tablero|el tablero de tareas]].",
     ]
     if not cambios:
         lineas += ["", "_Todavía no hay cambios._"]

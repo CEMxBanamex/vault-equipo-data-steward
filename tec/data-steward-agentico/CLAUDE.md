@@ -62,3 +62,10 @@ Backend en FastAPI + LangGraph, tools en un servidor MCP, frontend en Vite + Rea
 ## Actualización 2026-11-09 (novedades)
 - Al empezar, lee [[tec/data-steward-agentico/novedades|novedades]]: lista los últimos 20 cambios que llegaron a `main`, agrupados por fecha y PR, con liga a cada nota y su resumen. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder.
 - `novedades.md` lo genera GitHub Actions en cada cambio a `main`; nadie lo edita a mano.
+
+
+## Actualización 2026-11-09 (tareas por integrante)
+- Área nueva: [[tec/data-steward-agentico/tareas/_index|tareas]], un archivo por integrante con sus tareas y su estado. Ver [[tec/data-steward-agentico/plan-de-trabajo/decision-tareas-por-integrante|la decisión]].
+- Al empezar, lee también [[tec/data-steward-agentico/tareas/_tablero|el tablero de tareas]] y el archivo de tareas de la persona con la que trabajas.
+- Cuando terminen algo que corresponde a una tarea, propón marcarla en su archivo. Nunca edites el archivo de tareas de otra persona ni `_tablero.md`.
+- Sesión: [[tec/data-steward-agentico/sesiones/2026-11-09-juan-pablo-tareas-por-integrante|2026-11-09 tareas por integrante]].
