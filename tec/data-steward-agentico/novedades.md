@@ -10,7 +10,20 @@ _Lo genera GitHub Actions en cada cambio a `main`. No lo edites a mano._
 
 Muestra los últimos 20 cambios, del más reciente al más antiguo. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder. Para cambios más antiguos, consulta el historial de Git de `main`.
 
+El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/tareas/_tablero|el tablero de tareas]].
+
 ## 2026-11-09
+
+### feat: tareas por integrante, publicación automática y tablero · juan-pablo · PR #6
+- **Nueva:** [[tec/data-steward-agentico/plan-de-trabajo/decision-tareas-por-integrante|decision-tareas-por-integrante]]
+  Las tareas viven en un archivo por integrante dentro de tareas/, que solo marca su dueño y se publica en main sin PR; un Action genera el tablero del equipo.
+- **Nueva:** [[tec/data-steward-agentico/agentes/diagrama-agentes-y-tools|diagrama-agentes-y-tools]]
+  Diagrama en Lucidchart de los 7 agentes (grafo de casos y grafo del chat) y las 14 tools del MCP que usa cada uno.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-09-juan-pablo-tareas-por-integrante|2026-11-09-juan-pablo-tareas-por-integrante]]
+  Plan de la semana 1 (9 al 13 nov.) y sistema de tareas por integrante con publicación automática y tablero generado.
+- **Modificada:** [[tec/data-steward-agentico/CLAUDE|CLAUDE]]
+  MVP de Data Steward Agéntico para un reto del Tec con un banco como socio formador: agentes LangGraph con tools por MCP que revisan facturas y registros contra políticas, explican cada recomendación y dejan la decisión a una persona.
+- **Cambios en el repo:** `.github/CODEOWNERS`, `.github/workflows/sincronizar.yml`, `.gitignore`, `AGENTS.md`, `CLAUDE.md` y 7 más
 
 ### Mario · mario · PR #5
 - **Nueva:** [[tec/data-steward-agentico/plan-de-trabajo/propuesta-avance-frente-datos-mario|propuesta-avance-frente-datos-mario]]

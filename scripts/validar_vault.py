@@ -5,6 +5,7 @@ Revisa en los archivos agregados o modificados:
 - Fecha con formato AAAA-MM-DD.
 - Enlaces [[...]] que apunten a notas existentes.
 - Que nadie haya editado a mano la sección automática de un _index.md.
+- El formato de las tareas en tareas/<rama>.md (ver scripts/tareas.py).
 - Que cada quien solo modifique archivos de sus áreas, según .github/CODEOWNERS
   y .github/integrantes.txt. Fuera de ellas solo puede crear sus propias
   propuestas (propuesta-<tema>-<rama>.md) y sus sesiones
@@ -17,6 +18,8 @@ import fnmatch
 import re
 import subprocess
 import sys
+
+from tareas import cargar_todas, errores_de, es_archivo_de_tareas
 
 RAIZ = Path(__file__).resolve().parent.parent
 EXCLUIDOS = {"CLAUDE.md", "README.md"}
@@ -93,6 +96,14 @@ def validar(base: str) -> list[str]:
             if seccion_automatica(anterior) != seccion_automatica(texto):
                 errores.append(f"{ruta}: se editó a mano la sección automática; deshaz ese cambio.")
     return errores
+
+
+def validar_tareas_cambiadas(base: str) -> list[str]:
+    cambiados = {ruta for _, ruta in archivos_cambiados(base) if es_archivo_de_tareas(ruta)}
+    if not cambiados:
+        return []
+    _, errores = cargar_todas()
+    return errores_de(cambiados, errores)
 
 
 def usuarios_a_ramas() -> dict[str, str]:
@@ -178,7 +189,7 @@ def main() -> int:
     parser.add_argument("--base", default="origin/main")
     parser.add_argument("--rama", default="", help="rama de origen del PR")
     args = parser.parse_args()
-    errores = validar(args.base) + validar_areas(args.base, args.rama)
+    errores = validar(args.base) + validar_tareas_cambiadas(args.base) + validar_areas(args.base, args.rama)
     if errores:
         print("Se encontraron problemas:\n")
         print("\n".join(f"- {e}" for e in errores))

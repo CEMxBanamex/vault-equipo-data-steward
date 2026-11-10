@@ -9,6 +9,8 @@ El proyecto vive en `tec/data-steward-agentico/`. Empieza por su `CLAUDE.md`.
 ## Al empezar
 Lee `tec/data-steward-agentico/novedades.md`: lista los últimos 20 cambios que llegaron a `main`, con liga a cada nota. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder. Ese archivo lo genera GitHub Actions; nadie lo edita.
 
+Lee también `tec/data-steward-agentico/tareas/_tablero.md` (estado de las tareas del equipo) y el archivo de tareas de la persona con la que trabajas: `tec/data-steward-agentico/tareas/<rama>.md`.
+
 ## Antes de escribir (para Claude)
 - Pregunta quién es la persona con la que trabajas si no lo sabes: su nombre de rama (`juan-pablo`, `iris`, `mario`, `carlos-delgado`, `carlos-ramos`, `yael`, `mauricio`) va en el campo `autor` y decide qué áreas puede editar.
 - Revisa la tabla de dueños. Si te piden cambiar una nota de un área que no es de esa persona, no la edites: crea una propuesta (ver abajo).
@@ -24,6 +26,7 @@ Solo los dueños editan notas existentes de su área. **juan-pablo puede modific
 | `agentes/`, `modelos/`, `chat/` | carlos-delgado, carlos-ramos; cada dueño de agente también edita la nota de su agente |
 | `interfaces/` | yael, mauricio |
 | `sesiones/` | Cada quien las suyas |
+| `tareas/<rama>.md` | Cada quien el suyo; `_index.md`, juan-pablo; `_tablero.md`, nadie (lo genera el Action) |
 
 La fuente de verdad de los dueños es `.github/CODEOWNERS`.
 
@@ -34,15 +37,22 @@ La fuente de verdad de los dueños es `.github/CODEOWNERS`.
 ## Reglas para no tener conflictos en Git
 1. **Notas nuevas en lugar de editar notas ajenas.** Para cambiar algo de otra área, crea `<area>/propuesta-<tema>-<tu-rama>.md` con la plantilla `_equipo/plantillas/propuesta.md`. El dueño la integra.
 2. **Sesiones con autor en el nombre:** `sesiones/AAAA-MM-DD-<tu-rama>-<tema>.md`. Así dos sesiones del mismo día nunca chocan.
-3. **No edites `novedades.md` ni la sección automática de los `_index.md`** (entre `<!-- indice-automatico:inicio -->` y `<!-- indice-automatico:fin -->`). La regenera GitHub Actions. El resto del índice lo edita su dueño.
+3. **No edites `novedades.md`, `tareas/_tablero.md` ni la sección automática de los `_index.md`** (entre `<!-- indice-automatico:inicio -->` y `<!-- indice-automatico:fin -->`). La regenera GitHub Actions. El resto del índice lo edita su dueño.
 4. **Nunca borres ni sobrescribas notas.** Para corregir algo, el dueño agrega una sección nueva con fecha al final.
 5. **Frontmatter obligatorio** en toda nota nueva: `tipo`, `fecha` (AAAA-MM-DD), `autor` (tu rama) y `resumen` (una línea). Usa las plantillas de `_equipo/plantillas/`.
 6. **Enlaces con ruta completa desde la raíz:** `[[tec/data-steward-agentico/tools/_index|tools]]`. En una tabla, escapa la barra: `\|`.
 
+## Tareas
+- Cada integrante tiene sus tareas en `tareas/<rama>.md`. El formato está en `tareas/_index.md`: `- [ ] **S1-01** Título · vence: AAAA-MM-DD · listo cuando: ...`.
+- Estados: `[ ]` pendiente, `[/]` en proceso, `[x]` listo, `[!]` bloqueado (con `· bloqueo: <motivo>`).
+- Cuando la persona termine algo que corresponde a una tarea, propón marcarla. Cambia solo la casilla y, si hace falta, `bloqueo` o `nota`; no cambies IDs, fechas ni criterios sin que te lo pida.
+- Nunca edites el archivo de tareas de otra persona. Para las tareas propias nuevas usa el ID `<rama>-<nn>`.
+- Marcar tareas no requiere PR: cada 15 minutos el Action publica en `main` el archivo de tareas de cada rama y regenera el tablero.
+
 ## Flujo de Git
 - Cada quien trabaja **solo en su rama**. Nunca se sube directo a `main`.
 - Para llevar cambios a `main`, abre un Pull Request. Se valida solo (frontmatter, enlaces, sección automática y secretos) y GitHub pide revisión a los dueños del área tocada.
-- Al fusionar a `main`, GitHub Actions regenera los índices y propaga `main` a todas las ramas.
+- Al fusionar a `main`, GitHub Actions regenera los índices, el tablero y las novedades, y propaga `main` a todas las ramas. También corre cada 15 minutos para publicar los archivos de tareas.
 - Haz pull de tu rama antes de empezar a trabajar (Obsidian Git lo hace al abrir).
 - Si el Action no puede propagar `main` a tu rama por un conflicto, te abre un issue con los archivos y cómo resolverlo.
 
