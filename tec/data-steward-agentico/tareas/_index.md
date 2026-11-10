@@ -58,3 +58,19 @@ Una línea por tarea, con los campos separados por ` · `:
 ## Para los asistentes de IA
 - Al empezar, lee el tablero y el archivo de tareas de la persona con la que trabajas.
 - Cuando terminen algo que corresponde a una tarea, propón marcarla y, si aplica, actualizar la `nota`. Nunca edites el archivo de tareas de otra persona.
+
+<!-- indice-automatico:inicio -->
+## Índice automático
+_No edites esta sección: la regenera GitHub Actions en cada cambio a main._
+
+| Nota | Tipo | Autor | Fecha | Resumen |
+|---|---|---|---|---|
+| [[tec/data-steward-agentico/tareas/_tablero\|_tablero]] | tablero | vault-bot | 2026-11-09 | Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar. |
+| [[tec/data-steward-agentico/tareas/carlos-delgado\|carlos-delgado]] | tareas | carlos-delgado | 2026-11-09 | Tareas de Carlos Delgado (Agentes y modelos) por semana y su estado. Solo Carlos Delgado las marca; juan-pablo agrega las de cada semana. |
+| [[tec/data-steward-agentico/tareas/carlos-ramos\|carlos-ramos]] | tareas | carlos-ramos | 2026-11-09 | Tareas de Carlos Ramos (Agentes y modelos) por semana y su estado. Solo Carlos Ramos las marca; juan-pablo agrega las de cada semana. |
+| [[tec/data-steward-agentico/tareas/iris\|iris]] | tareas | iris | 2026-11-09 | Tareas de Iris (Datos) por semana y su estado. Solo Iris las marca; juan-pablo agrega las de cada semana. |
+| [[tec/data-steward-agentico/tareas/juan-pablo\|juan-pablo]] | tareas | juan-pablo | 2026-11-09 | Tareas de Juan Pablo (Infraestructura y CI/CD) por semana y su estado. Solo Juan Pablo las marca; juan-pablo agrega las de cada semana. |
+| [[tec/data-steward-agentico/tareas/mario\|mario]] | tareas | mario | 2026-11-09 | Tareas de Mario (Datos) por semana y su estado. Solo Mario las marca; juan-pablo agrega las de cada semana. |
+| [[tec/data-steward-agentico/tareas/mauricio\|mauricio]] | tareas | mauricio | 2026-11-09 | Tareas de Mauricio (Frontend) por semana y su estado. Solo Mauricio las marca; juan-pablo agrega las de cada semana. |
+| [[tec/data-steward-agentico/tareas/yael\|yael]] | tareas | yael | 2026-11-09 | Tareas de Yael (Frontend) por semana y su estado. Solo Yael las marca; juan-pablo agrega las de cada semana. |
+<!-- indice-automatico:fin -->
