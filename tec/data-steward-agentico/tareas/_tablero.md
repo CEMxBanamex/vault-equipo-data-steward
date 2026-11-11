@@ -1,6 +1,6 @@
 ---
 tipo: tablero
-fecha: 2026-11-10
+fecha: 2026-11-11
 autor: vault-bot
 resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar.
 ---
@@ -8,7 +8,7 @@ resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo
 
 _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a mano: marca tus tareas en tu archivo. Cómo funciona: [[tec/data-steward-agentico/tareas/_index|tareas]]._
 
-**Actualizado:** 2026-11-10 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
+**Actualizado:** 2026-11-11 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
 
 **Avance general:** 12 de 41 listas (29 %) · 1 en proceso · 0 bloqueadas · 28 pendientes.
 
@@ -22,26 +22,29 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 _Ninguna._
 
 ## Vencidas
-_Ninguna._
+| Tarea | Responsable | Venció | Estado |
+|---|---|---|---|
+| **S1-01** Estructura del repo de código en main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
+| **S1-02** docker-compose.dev.yml con PostgreSQL + pgvector para todo el equipo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
+| **S1-03** CI mínimo del repo de código | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
+| **S1-04** CODEOWNERS del repo de código | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
+| **S1-05** Infra en AWS: RDS PostgreSQL con pgvector y EC2 | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
+| **S1-29** Ollama expuesto por Tailscale desde una laptop | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 10/11 | Pendiente |
+| **S1-30** Borrador de los eventos SSE del chat | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 10/11 | Pendiente |
+| **S1-34** División de pantallas con Mauricio, por escrito | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 10/11 | Pendiente |
+| **S1-35** Base del frontend: Vite + React, rutas, layout y sistema de diseño | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 10/11 | Pendiente |
+| **S1-36** Stubs de FastAPI de los endpoints de sus pantallas | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 10/11 | Pendiente |
+| **S1-39** Stubs de FastAPI de los endpoints de sus pantallas | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 10/11 | Pendiente |
 
 ## Vencen hoy y mañana
 | Tarea | Responsable | Vence | Estado |
 |---|---|---|---|
-| **S1-01** Estructura del repo de código en main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S1-02** docker-compose.dev.yml con PostgreSQL + pgvector para todo el equipo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S1-03** CI mínimo del repo de código | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S1-04** CODEOWNERS del repo de código | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S1-05** Infra en AWS: RDS PostgreSQL con pgvector y EC2 | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S1-29** Ollama expuesto por Tailscale desde una laptop | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
-| **S1-30** Borrador de los eventos SSE del chat | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
-| **S1-34** División de pantallas con Mauricio, por escrito | [[tec/data-steward-agentico/tareas/yael\|Yael]] | hoy | Pendiente |
-| **S1-35** Base del frontend: Vite + React, rutas, layout y sistema de diseño | [[tec/data-steward-agentico/tareas/yael\|Yael]] | hoy | Pendiente |
-| **S1-36** Stubs de FastAPI de los endpoints de sus pantallas | [[tec/data-steward-agentico/tareas/yael\|Yael]] | hoy | Pendiente |
-| **S1-39** Stubs de FastAPI de los endpoints de sus pantallas | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | hoy | Pendiente |
-| **S1-06** Sesión de revisión de contratos y PR aprobado a main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
-| **S1-07** Confirmar con el socio formador los datos de negocio | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
-| **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | mañana | En proceso |
-| **S1-31** Prueba rápida de text-to-SQL con el modelo local | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | mañana | Pendiente |
+| **S1-06** Sesión de revisión de contratos y PR aprobado a main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
+| **S1-07** Confirmar con el socio formador los datos de negocio | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
+| **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | hoy | En proceso |
+| **S1-31** Prueba rápida de text-to-SQL con el modelo local | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
+| **S1-27** Servidor MCP base y tool de ejemplo con la convención | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | mañana | Pendiente |
+| **S1-32** Agente de ejemplo con la convención | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | mañana | Pendiente |
 
 ## Se destrabaron
 _Pendientes cuyas dependencias ya están listas: se pueden empezar._
