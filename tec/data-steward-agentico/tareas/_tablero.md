@@ -10,7 +10,7 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 
 **Actualizado:** 2026-11-10 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
 
-**Avance general:** 8 de 41 listas (20 %) · 2 en proceso · 0 bloqueadas · 31 pendientes.
+**Avance general:** 12 de 41 listas (29 %) · 1 en proceso · 0 bloqueadas · 28 pendientes.
 
 ## Hitos
 | Hito | Responsable | Vence | Estado |
@@ -32,7 +32,6 @@ _Ninguna._
 | **S1-03** CI mínimo del repo de código | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
 | **S1-04** CODEOWNERS del repo de código | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
 | **S1-05** Infra en AWS: RDS PostgreSQL con pgvector y EC2 | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S1-25** Registrar la VRAM de cada GPU | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | hoy | Pendiente |
 | **S1-29** Ollama expuesto por Tailscale desde una laptop | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
 | **S1-30** Borrador de los eventos SSE del chat | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
 | **S1-34** División de pantallas con Mauricio, por escrito | [[tec/data-steward-agentico/tareas/yael\|Yael]] | hoy | Pendiente |
@@ -41,7 +40,6 @@ _Ninguna._
 | **S1-39** Stubs de FastAPI de los endpoints de sus pantallas | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | hoy | Pendiente |
 | **S1-06** Sesión de revisión de contratos y PR aprobado a main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
 | **S1-07** Confirmar con el socio formador los datos de negocio | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
-| **S1-16** Descargar FATURA y correr el convertidor | [[tec/data-steward-agentico/tareas/iris\|Iris]] | mañana | Pendiente |
 | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | mañana | En proceso |
 | **S1-31** Prueba rápida de text-to-SQL con el modelo local | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | mañana | Pendiente |
 
@@ -54,17 +52,17 @@ _Ninguna por ahora._
 | Frente | Listas | En proceso | Bloqueadas | Pendientes | Avance |
 |---|---|---|---|---|---|
 | Infraestructura y CI/CD | 0 | 0 | 0 | 11 | ░░░░░░░░░░ 0 % |
-| Datos | 7 | 1 | 0 | 4 | ▓▓▓▓▓▓░░░░ 58 % |
-| Agentes y modelos | 1 | 1 | 0 | 8 | ▓░░░░░░░░░ 10 % |
+| Datos | 10 | 0 | 0 | 2 | ▓▓▓▓▓▓▓▓░░ 83 % |
+| Agentes y modelos | 2 | 1 | 0 | 7 | ▓▓░░░░░░░░ 20 % |
 | Frontend | 0 | 0 | 0 | 8 | ░░░░░░░░░░ 0 % |
 
 ## Avance por persona
 | Persona | Listas | En proceso | Bloqueadas | Pendientes | Avance | Lo siguiente |
 |---|---|---|---|---|---|---|
 | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 0 | 0 | 0 | 11 | ░░░░░░░░░░ 0 % | **S1-01** Estructura del repo de código en main |
-| [[tec/data-steward-agentico/tareas/iris\|Iris]] | 3 | 1 | 0 | 2 | ▓▓▓▓▓░░░░░ 50 % | **S1-16** Descargar FATURA y correr el convertidor |
+| [[tec/data-steward-agentico/tareas/iris\|Iris]] | 6 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % | — |
 | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 4 | 0 | 0 | 2 | ▓▓▓▓▓▓▓░░░ 67 % | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales |
-| [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 1 | 1 | 0 | 3 | ▓▓░░░░░░░░ 20 % | **S1-25** Registrar la VRAM de cada GPU |
+| [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 2 | 1 | 0 | 2 | ▓▓▓▓░░░░░░ 40 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
 | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 0 | 0 | 0 | 5 | ░░░░░░░░░░ 0 % | **S1-29** Ollama expuesto por Tailscale desde una laptop |
 | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 0 | 0 | 0 | 5 | ░░░░░░░░░░ 0 % | **S1-34** División de pantallas con Mauricio, por escrito |
 | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 0 | 0 | 0 | 3 | ░░░░░░░░░░ 0 % | **S1-39** Stubs de FastAPI de los endpoints de sus pantallas |
