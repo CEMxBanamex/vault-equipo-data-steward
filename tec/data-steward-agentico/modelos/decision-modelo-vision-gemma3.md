@@ -68,3 +68,21 @@ Su activación requiere seleccionar y probar un modelo, configurar el acceso, re
 - **Enlaces:**
   - [[tec/data-steward-agentico/modelos/_index|Modelos]]
   - [[tec/data-steward-agentico/modelos/decision-inferencia-en-laptops|Inferencia en laptops]]
+
+## Actualización — 2026-11-11: evaluación controlada (S1-26)
+
+Se evaluó `gemma3:4b` en Ollama local con 20 facturas de 20 plantillas distintas del piloto FATURA. Se utilizó el mismo prompt de cuatro campos y la misma configuración en todo el lote: `temperature=0`, `seed=42`, `num_ctx=4096` y `num_predict=768`.
+
+| Campo | Aciertos / valores anotados | Porcentaje |
+| --- | ---: | ---: |
+| Folio | 15 / 18 | 83.3 % |
+| Subtotal | 10 / 11 | 90.9 % |
+| Impuestos | 7 / 7 | 100 % |
+| Total | 15 / 15 | 100 % |
+| Global | 47 / 51 | 92.2 % |
+
+El tiempo mediano por factura fue de 3.53 segundos. Los 29 campos sin anotación quedaron fuera del cálculo: la falta de anotación no confirma que el dato esté ausente en la imagen. En una revisión visual se comprobó que el modelo confundió un descuento con un impuesto y devolvió un total que no aparecía impreso.
+
+En una prueba aparte con `piloto_001.png`, la salida de 14 campos cumplió el contrato `FacturaExtraida`, pero el RFC del emisor fue incorrecto. Esta prueba no forma parte del 92.2 %.
+
+**Decisión:** usar `gemma3:4b` local para el prototipo, con validación posterior y revisión humana cuando falte evidencia para un dato requerido o haya inconsistencias. Mantener Bedrock como alternativa pendiente de evaluación. La decisión se basa en la viabilidad local observada; no se realizó una comparación de rendimiento con Bedrock.
