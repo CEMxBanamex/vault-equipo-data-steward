@@ -1,6 +1,6 @@
 ---
 tipo: novedades
-fecha: 2026-11-10
+fecha: 2026-11-11
 autor: vault-bot
 resumen: Los últimos 20 cambios que llegaron a main, con liga a cada nota. Léelo al empezar.
 ---
@@ -11,6 +11,12 @@ _Lo genera GitHub Actions en cada cambio a `main`. No lo edites a mano._
 Muestra los últimos 20 cambios, del más reciente al más antiguo. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder. Para cambios más antiguos, consulta el historial de Git de `main`.
 
 El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/tareas/_tablero|el tablero de tareas]].
+
+## 2026-11-11
+
+### S1-26: Documentar la evaluación de Gemma 3 para extracción de facturas · carlos-delgado · PR #9
+- **Modificada:** [[tec/data-steward-agentico/modelos/decision-modelo-vision-gemma3|decision-modelo-vision-gemma3]]
+  Mantener gemma3:4b como candidato de visión para el prototipo y documentar sus resultados y limitaciones.
 
 ## 2026-11-10
 
