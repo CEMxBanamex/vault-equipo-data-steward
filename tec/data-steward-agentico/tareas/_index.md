@@ -65,7 +65,7 @@ _No edites esta sección: la regenera GitHub Actions en cada cambio a main._
 
 | Nota | Tipo | Autor | Fecha | Resumen |
 |---|---|---|---|---|
-| [[tec/data-steward-agentico/tareas/_tablero\|_tablero]] | tablero | vault-bot | 2026-11-13 | Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar. |
+| [[tec/data-steward-agentico/tareas/_tablero\|_tablero]] | tablero | vault-bot | 2026-11-14 | Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar. |
 | [[tec/data-steward-agentico/tareas/carlos-delgado\|carlos-delgado]] | tareas | carlos-delgado | 2026-11-09 | Tareas de Carlos Delgado (Agentes y modelos) por semana y su estado. Solo Carlos Delgado las marca; juan-pablo agrega las de cada semana. |
 | [[tec/data-steward-agentico/tareas/carlos-ramos\|carlos-ramos]] | tareas | carlos-ramos | 2026-11-09 | Tareas de Carlos Ramos (Agentes y modelos) por semana y su estado. Solo Carlos Ramos las marca; juan-pablo agrega las de cada semana. |
 | [[tec/data-steward-agentico/tareas/iris\|iris]] | tareas | iris | 2026-11-09 | Tareas de Iris (Datos) por semana y su estado. Solo Iris las marca; juan-pablo agrega las de cada semana. |
