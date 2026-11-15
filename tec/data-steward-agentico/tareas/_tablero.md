@@ -1,6 +1,6 @@
 ---
 tipo: tablero
-fecha: 2026-11-14
+fecha: 2026-11-15
 autor: vault-bot
 resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar.
 ---
@@ -8,7 +8,7 @@ resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo
 
 _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a mano: marca tus tareas en tu archivo. Cómo funciona: [[tec/data-steward-agentico/tareas/_index|tareas]]._
 
-**Actualizado:** 2026-11-14 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
+**Actualizado:** 2026-11-15 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
 
 **Avance general:** 12 de 41 listas (29 %) · 1 en proceso · 0 bloqueadas · 28 pendientes.
 
