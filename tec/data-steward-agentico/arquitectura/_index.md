@@ -54,3 +54,21 @@ _No edites esta sección: la regenera GitHub Actions en cada cambio a main._
 | [[tec/data-steward-agentico/arquitectura/decision-subida-directa-a-s3\|decision-subida-directa-a-s3]] | decision |  | 2026-10-21 | El navegador sube el archivo del caso directo a S3 con una URL prefirmada, sin pasar por el backend. |
 | [[tec/data-steward-agentico/arquitectura/decision-jwt-al-final\|decision-jwt-al-final]] | decision |  | 2026-10-28 | El login con Cognito por correo se conecta temprano en el frontend, pero la validación del JWT en las APIs se activa al final con un interruptor AUTH_MODE, para probar fácil con Postman. |
 <!-- indice-automatico:fin -->
+
+
+## Actualización 2026-11-10 (infraestructura y CI/CD)
+- La cuenta de AWS es de Learner Lab y el proyecto cierra en noviembre; la infraestructura se ajustó a eso. Reemplaza parte de lo propuesto arriba: sin Nginx (frontend en Vercel), EC2 en subred pública sin NAT, un ALB y una RDS compartidos, `LabInstanceProfile` en lugar de roles propios, SSM Parameter Store e imágenes en GHCR.
+- Notas nuevas:
+  - [[tec/data-steward-agentico/arquitectura/decision-infraestructura-en-learner-lab|Decisión: infraestructura del MVP en AWS Learner Lab]]
+  - [[tec/data-steward-agentico/arquitectura/decision-ramas-y-ci-cd|Decisión: ramas y CI/CD del repo de código]]
+  - [[tec/data-steward-agentico/arquitectura/guia-claude-code-ci-cd|Guía para Claude Code: infraestructura y CI/CD]]
+- Sesión: [[tec/data-steward-agentico/sesiones/2026-11-10-juan-pablo-infraestructura-ci-cd|2026-11-10 infraestructura y CI/CD]].
+- Pendiente: actualizar el diagrama de Lucid con estos cambios.
+
+
+## Actualización 2026-11-17 (fases 0 a 3 en el repo de código)
+- Sin ALB ni ACM por los créditos: HTTPS con Caddy en cada EC2 y una IP elástica. Ver la actualización en [[tec/data-steward-agentico/arquitectura/decision-infraestructura-en-learner-lab|infraestructura en Learner Lab]].
+- CI y reglas del repo implementados; la revisión de code owners no es obligatoria. Ver [[tec/data-steward-agentico/arquitectura/decision-ramas-y-ci-cd|ramas y CI/CD]].
+- El Terraform está escrito y verificado con `plan`, pero todavía no se aplica.
+- Sesión: [[tec/data-steward-agentico/sesiones/2026-11-17-juan-pablo-fases-0-a-3-infra-ci-cd|2026-11-17 fases 0 a 3]].
+- Pendiente: actualizar el diagrama de Lucid.
