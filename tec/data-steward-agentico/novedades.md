@@ -1,6 +1,6 @@
 ---
 tipo: novedades
-fecha: 2026-11-11
+fecha: 2026-11-17
 autor: vault-bot
 resumen: Los últimos 20 cambios que llegaron a main, con liga a cada nota. Léelo al empezar.
 ---
@@ -11,6 +11,22 @@ _Lo genera GitHub Actions en cada cambio a `main`. No lo edites a mano._
 Muestra los últimos 20 cambios, del más reciente al más antiguo. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder. Para cambios más antiguos, consulta el historial de Git de `main`.
 
 El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/tareas/_tablero|el tablero de tareas]].
+
+## 2026-11-17
+
+### JP / S0 - S4 Complete · juan-pablo · PR #10
+- **Nueva:** [[tec/data-steward-agentico/arquitectura/decision-infraestructura-en-learner-lab|decision-infraestructura-en-learner-lab]]
+  Infraestructura del MVP ajustada a AWS Learner Lab y al cierre de noviembre - EC2 de dev y prod detrás de un ALB compartido, RDS con pgvector, S3, SSM, imágenes en GHCR, frontend en Vercel y dominio propio fuera de AWS.
+- **Nueva:** [[tec/data-steward-agentico/arquitectura/decision-ramas-y-ci-cd|decision-ramas-y-ci-cd]]
+  Repo de código con ramas por tarea → dev → main; push a dev despliega al EC2 de dev y fusionar dev a main promueve a prod la misma imagen ya probada, con CI en cada PR, imágenes en GHCR y un runner self-hosted.
+- **Nueva:** [[tec/data-steward-agentico/arquitectura/guia-claude-code-ci-cd|guia-claude-code-ci-cd]]
+  Instrucciones por fases para que Claude Code implemente en el repo de código la infraestructura con Terraform y el CI/CD (ramas, GitHub Actions, despliegue a EC2 y Vercel), con reglas, criterios de terminado y pasos manuales.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-10-juan-pablo-infraestructura-ci-cd|2026-11-10-juan-pablo-infraestructura-ci-cd]]
+  Plan de infraestructura y CI/CD ajustado a AWS Learner Lab - dominio propio, frontend en Vercel, EC2 sin NAT, imágenes en GHCR, runner self-hosted y ramas tarea → dev → main.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-17-juan-pablo-fases-0-a-3-infra-ci-cd|2026-11-17-juan-pablo-fases-0-a-3-infra-ci-cd]]
+  Fases 0 a 3 de infraestructura y CI/CD en el repo de código (11 y 12 nov.) - reorganización, entorno local, CI con reglas del repo y Terraform sin ALB, verificado y sin aplicar.
+- **Modificada:** [[tec/data-steward-agentico/arquitectura/_index|_index]]
+  Infraestructura del MVP en AWS (ALB, ASG, EC2 con Docker Compose, RDS con pgvector, S3, Cognito), qué está decidido y qué propuesto, contenedores, red y seguridad.
 
 ## 2026-11-11
 

@@ -10,7 +10,7 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 
 **Actualizado:** 2026-11-17 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
 
-**Avance general:** 12 de 41 listas (29 %) · 1 en proceso · 0 bloqueadas · 28 pendientes.
+**Avance general:** 16 de 41 listas (39 %) · 1 en proceso · 0 bloqueadas · 24 pendientes.
 
 ## Hitos
 | Hito | Responsable | Vence | Estado |
@@ -24,10 +24,6 @@ _Ninguna._
 ## Vencidas
 | Tarea | Responsable | Venció | Estado |
 |---|---|---|---|
-| **S1-01** Estructura del repo de código en main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
-| **S1-02** docker-compose.dev.yml con PostgreSQL + pgvector para todo el equipo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
-| **S1-03** CI mínimo del repo de código | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
-| **S1-04** CODEOWNERS del repo de código | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
 | **S1-05** Infra en AWS: RDS PostgreSQL con pgvector y EC2 | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
 | **S1-29** Ollama expuesto por Tailscale desde una laptop | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 10/11 | Pendiente |
 | **S1-30** Borrador de los eventos SSE del chat | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 10/11 | Pendiente |
@@ -60,12 +56,15 @@ _Nada vence hoy ni mañana._
 ## Se destrabaron
 _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 
-_Ninguna por ahora._
+| Tarea | Responsable | Vence | Dependía de |
+|---|---|---|---|
+| **S1-35** Base del frontend: Vite + React, rutas, layout y sistema de diseño | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 10/11 | S1-01 |
+| **S1-10** Pipeline de imágenes a ECR | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | S1-01 |
 
 ## Avance por frente
 | Frente | Listas | En proceso | Bloqueadas | Pendientes | Avance |
 |---|---|---|---|---|---|
-| Infraestructura y CI/CD | 0 | 0 | 0 | 11 | ░░░░░░░░░░ 0 % |
+| Infraestructura y CI/CD | 4 | 0 | 0 | 7 | ▓▓▓▓░░░░░░ 36 % |
 | Datos | 10 | 0 | 0 | 2 | ▓▓▓▓▓▓▓▓░░ 83 % |
 | Agentes y modelos | 2 | 1 | 0 | 7 | ▓▓░░░░░░░░ 20 % |
 | Frontend | 0 | 0 | 0 | 8 | ░░░░░░░░░░ 0 % |
@@ -73,7 +72,7 @@ _Ninguna por ahora._
 ## Avance por persona
 | Persona | Listas | En proceso | Bloqueadas | Pendientes | Avance | Lo siguiente |
 |---|---|---|---|---|---|---|
-| [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 0 | 0 | 0 | 11 | ░░░░░░░░░░ 0 % | **S1-01** Estructura del repo de código en main |
+| [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 4 | 0 | 0 | 7 | ▓▓▓▓░░░░░░ 36 % | **S1-05** Infra en AWS: RDS PostgreSQL con pgvector y EC2 |
 | [[tec/data-steward-agentico/tareas/iris\|Iris]] | 6 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % | — |
 | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 4 | 0 | 0 | 2 | ▓▓▓▓▓▓▓░░░ 67 % | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales |
 | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 2 | 1 | 0 | 2 | ▓▓▓▓░░░░░░ 40 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
