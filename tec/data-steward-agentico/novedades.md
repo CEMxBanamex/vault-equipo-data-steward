@@ -14,6 +14,14 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-17
 
+### Yael · yael · PR #11
+- **Nueva:** [[tec/data-steward-agentico/interfaces/decision-division-de-pantallas|decision-division-de-pantallas]]
+  Reparto de pantallas y endpoints del frontend entre Yael (Casos y Bitácora) y Mauricio (Chat, Pasos y Login).
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-17-yael-avance-semana-1|2026-11-17-yael-avance-semana-1]]
+  Conexión del vault vía MCP, formalización de división de pantallas, stubs de FastAPI, tools de bitácora y MSW en frontend (100% Semana 1).
+- **Modificada:** [[tec/data-steward-agentico/agentes/agente-redactor-de-hallazgos|agente-redactor-de-hallazgos]]
+  Tercer agente del grafo de casos: explica cada hallazgo con su evidencia, lo registra y deja el caso en pausa para la decisión del analista.
+
 ### JP / S0 - S4 Complete · juan-pablo · PR #10
 - **Nueva:** [[tec/data-steward-agentico/arquitectura/decision-infraestructura-en-learner-lab|decision-infraestructura-en-learner-lab]]
   Infraestructura del MVP ajustada a AWS Learner Lab y al cierre de noviembre - EC2 de dev y prod detrás de un ALB compartido, RDS con pgvector, S3, SSM, imágenes en GHCR, frontend en Vercel y dominio propio fuera de AWS.
