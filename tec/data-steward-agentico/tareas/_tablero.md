@@ -10,7 +10,7 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 
 **Actualizado:** 2026-11-18 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
 
-**Avance general:** 21 de 41 listas (51 %) · 1 en proceso · 0 bloqueadas · 19 pendientes.
+**Avance general:** 22 de 41 listas (54 %) · 1 en proceso · 0 bloqueadas · 18 pendientes.
 
 ## Hitos
 | Hito | Responsable | Vence | Estado |
@@ -25,7 +25,6 @@ _Ninguna._
 | Tarea | Responsable | Venció | Estado |
 |---|---|---|---|
 | **S1-05** Infra en AWS: RDS PostgreSQL con pgvector y EC2 | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10/11 | Pendiente |
-| **S1-29** Ollama expuesto por Tailscale desde una laptop | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 10/11 | Pendiente |
 | **S1-30** Borrador de los eventos SSE del chat | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 10/11 | Pendiente |
 | **S1-39** Stubs de FastAPI de los endpoints de sus pantallas | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 10/11 | Pendiente |
 | **S1-06** Sesión de revisión de contratos y PR aprobado a main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 11/11 | Pendiente |
@@ -56,13 +55,14 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 | **S1-39** Stubs de FastAPI de los endpoints de sus pantallas | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 10/11 | S1-01, S1-34 |
 | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | S1-35 |
 | **S1-10** Pipeline de imágenes a ECR | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | S1-01 |
+| **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 13/11 | S1-29 |
 
 ## Avance por frente
 | Frente | Listas | En proceso | Bloqueadas | Pendientes | Avance |
 |---|---|---|---|---|---|
 | Infraestructura y CI/CD | 4 | 0 | 0 | 7 | ▓▓▓▓░░░░░░ 36 % |
 | Datos | 10 | 0 | 0 | 2 | ▓▓▓▓▓▓▓▓░░ 83 % |
-| Agentes y modelos | 2 | 1 | 0 | 7 | ▓▓░░░░░░░░ 20 % |
+| Agentes y modelos | 3 | 1 | 0 | 6 | ▓▓▓░░░░░░░ 30 % |
 | Frontend | 5 | 0 | 0 | 3 | ▓▓▓▓▓▓░░░░ 62 % |
 
 ## Avance por persona
@@ -72,6 +72,6 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 | [[tec/data-steward-agentico/tareas/iris\|Iris]] | 6 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % | — |
 | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 4 | 0 | 0 | 2 | ▓▓▓▓▓▓▓░░░ 67 % | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales |
 | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 2 | 1 | 0 | 2 | ▓▓▓▓░░░░░░ 40 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
-| [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 0 | 0 | 0 | 5 | ░░░░░░░░░░ 0 % | **S1-29** Ollama expuesto por Tailscale desde una laptop |
+| [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 1 | 0 | 0 | 4 | ▓▓░░░░░░░░ 20 % | **S1-30** Borrador de los eventos SSE del chat |
 | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 5 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % | — |
 | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 0 | 0 | 0 | 3 | ░░░░░░░░░░ 0 % | **S1-39** Stubs de FastAPI de los endpoints de sus pantallas |
