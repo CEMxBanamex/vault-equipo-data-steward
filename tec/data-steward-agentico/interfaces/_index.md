@@ -62,6 +62,7 @@ _No edites esta sección: la regenera GitHub Actions en cada cambio a main._
 | Nota | Tipo | Autor | Fecha | Resumen |
 |---|---|---|---|---|
 | [[tec/data-steward-agentico/interfaces/decision-supuestos-del-mockup\|decision-supuestos-del-mockup]] | decision |  | 2026-10-28 | Qué se decidió o inventó en el mockup porque el brief no lo definía, y qué queda por validar. |
+| [[tec/data-steward-agentico/interfaces/decision-division-de-pantallas\|decision-division-de-pantallas]] | decision | yael | 2026-11-17 | Reparto de pantallas y endpoints del frontend entre Yael (Casos y Bitácora) y Mauricio (Chat, Pasos y Login). |
 | [[tec/data-steward-agentico/interfaces/pantalla-bandeja-de-casos\|pantalla-bandeja-de-casos]] | pantalla |  | 2026-10-28 | Pantalla 2, lista de casos con resumen, filtros y tabla; desde aquí se abre el detalle de cada caso. |
 | [[tec/data-steward-agentico/interfaces/pantalla-bitacora\|pantalla-bitacora]] | pantalla |  | 2026-10-28 | Pantalla 6, registro de solo lectura de todo lo que hacen las personas y el agente, con filtros, exportación y filas expandibles. |
 | [[tec/data-steward-agentico/interfaces/pantalla-detalle-factura\|pantalla-detalle-factura]] | pantalla |  | 2026-10-28 | Pantalla 4, la más importante: documento original a la izquierda; datos extraídos, hallazgos y resultado sugerido a la derecha; la persona confirma, corrige o escala. |
