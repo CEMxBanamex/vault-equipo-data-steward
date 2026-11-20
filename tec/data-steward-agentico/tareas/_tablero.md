@@ -10,7 +10,7 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 
 **Actualizado:** 2026-11-20 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
 
-**Avance general:** 22 de 41 listas (54 %) · 1 en proceso · 0 bloqueadas · 18 pendientes.
+**Avance general:** 24 de 41 listas (59 %) · 1 en proceso · 0 bloqueadas · 16 pendientes.
 
 ## Hitos
 | Hito | Responsable | Vence | Estado |
@@ -31,7 +31,6 @@ _Ninguna._
 | **S1-07** Confirmar con el socio formador los datos de negocio | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 11/11 | Pendiente |
 | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 11/11 | En proceso |
 | **S1-31** Prueba rápida de text-to-SQL con el modelo local | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 11/11 | Pendiente |
-| **S1-27** Servidor MCP base y tool de ejemplo con la convención | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 12/11 | Pendiente |
 | **S1-32** Agente de ejemplo con la convención | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 12/11 | Pendiente |
 | **S1-08** Primera versión de ejecutar_consulta, listar_vistas_consultables y consultar_catalogo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | Pendiente |
 | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | Pendiente |
@@ -39,7 +38,6 @@ _Ninguna._
 | **S1-11** Checkpoint del viernes (30 min) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | Pendiente |
 | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 13/11 | Pendiente |
 | **S1-23** Conectar el agente de gobernanza al grafo del chat | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 13/11 | Pendiente |
-| **S1-28** Esqueleto del grafo de casos con tools falsas | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 13/11 | Pendiente |
 | **S1-33** Esqueleto del grafo del chat con tools falsas | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 13/11 | Pendiente |
 | **S1-40** Primera versión de consultar_caso y buscar_facturas | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 13/11 | Pendiente |
 | **S1-41** Pantallas del chat y línea de pasos con MSW | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 13/11 | Pendiente |
@@ -62,7 +60,7 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 |---|---|---|---|---|---|
 | Infraestructura y CI/CD | 4 | 0 | 0 | 7 | ▓▓▓▓░░░░░░ 36 % |
 | Datos | 10 | 0 | 0 | 2 | ▓▓▓▓▓▓▓▓░░ 83 % |
-| Agentes y modelos | 3 | 1 | 0 | 6 | ▓▓▓░░░░░░░ 30 % |
+| Agentes y modelos | 5 | 1 | 0 | 4 | ▓▓▓▓▓░░░░░ 50 % |
 | Frontend | 5 | 0 | 0 | 3 | ▓▓▓▓▓▓░░░░ 62 % |
 
 ## Avance por persona
@@ -71,7 +69,7 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 4 | 0 | 0 | 7 | ▓▓▓▓░░░░░░ 36 % | **S1-05** Infra en AWS: RDS PostgreSQL con pgvector y EC2 |
 | [[tec/data-steward-agentico/tareas/iris\|Iris]] | 6 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % | — |
 | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 4 | 0 | 0 | 2 | ▓▓▓▓▓▓▓░░░ 67 % | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales |
-| [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 2 | 1 | 0 | 2 | ▓▓▓▓░░░░░░ 40 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
+| [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 4 | 1 | 0 | 0 | ▓▓▓▓▓▓▓▓░░ 80 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
 | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 1 | 0 | 0 | 4 | ▓▓░░░░░░░░ 20 % | **S1-30** Borrador de los eventos SSE del chat |
 | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 5 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % | — |
 | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 0 | 0 | 0 | 3 | ░░░░░░░░░░ 0 % | **S1-39** Stubs de FastAPI de los endpoints de sus pantallas |
