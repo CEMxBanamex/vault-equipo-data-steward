@@ -1,6 +1,6 @@
 ---
 tipo: tablero
-fecha: 2026-11-21
+fecha: 2026-11-22
 autor: vault-bot
 resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar.
 ---
@@ -8,9 +8,9 @@ resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo
 
 _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a mano: marca tus tareas en tu archivo. Cómo funciona: [[tec/data-steward-agentico/tareas/_index|tareas]]._
 
-**Actualizado:** 2026-11-21 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
+**Actualizado:** 2026-11-22 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
 
-**Avance general:** 26 de 41 listas (63 %) · 2 en proceso · 1 bloqueadas · 12 pendientes.
+**Avance general:** 27 de 41 listas (66 %) · 2 en proceso · 1 bloqueadas · 11 pendientes.
 
 ## Hitos
 | Hito | Responsable | Vence | Estado |
@@ -40,7 +40,6 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 13/11 | En proceso |
 | **S1-23** Conectar el agente de gobernanza al grafo del chat | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 13/11 | Bloqueado |
 | **S1-33** Esqueleto del grafo del chat con tools falsas | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 13/11 | Pendiente |
-| **S1-40** Primera versión de consultar_caso y buscar_facturas | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 13/11 | Pendiente |
 
 ## Vencen hoy y mañana
 _Nada vence hoy ni mañana._
@@ -59,7 +58,7 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 | Infraestructura y CI/CD | 4 | 0 | 0 | 7 | ▓▓▓▓░░░░░░ 36 % |
 | Datos | 10 | 1 | 1 | 0 | ▓▓▓▓▓▓▓▓░░ 83 % |
 | Agentes y modelos | 5 | 1 | 0 | 4 | ▓▓▓▓▓░░░░░ 50 % |
-| Frontend | 7 | 0 | 0 | 1 | ▓▓▓▓▓▓▓▓▓░ 88 % |
+| Frontend | 8 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % |
 
 ## Avance por persona
 | Persona | Listas | En proceso | Bloqueadas | Pendientes | Avance | Lo siguiente |
@@ -70,4 +69,4 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 4 | 1 | 0 | 0 | ▓▓▓▓▓▓▓▓░░ 80 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
 | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 1 | 0 | 0 | 4 | ▓▓░░░░░░░░ 20 % | **S1-30** Borrador de los eventos SSE del chat |
 | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 5 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % | — |
-| [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 2 | 0 | 0 | 1 | ▓▓▓▓▓▓▓░░░ 67 % | **S1-40** Primera versión de consultar_caso y buscar_facturas |
+| [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 3 | 0 | 0 | 0 | ▓▓▓▓▓▓▓▓▓▓ 100 % | — |
