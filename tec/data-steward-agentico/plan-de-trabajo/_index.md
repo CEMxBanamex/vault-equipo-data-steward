@@ -80,4 +80,4 @@ _No edites esta sección: la regenera GitHub Actions en cada cambio a main._
 
 
 ## Actualización 2026-11-23 (semana 3)
-- [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo|Plan de la semana 3: demo y cierre]]: demo lista el martes 24 en dev, sesión de demo el miércoles 25 y MVP completo el domingo 29. Las 37 tareas (S3-01 a S3-37) están en los archivos de `tareas/`.
+- [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo|Plan de la semana 3: demo y cierre]]: demo lista el martes 24 en dev, sesión de demo el miércoles 25 y MVP completo el domingo 29. Las 38 tareas (S3-01 a S3-38) están en los archivos de `tareas/`.

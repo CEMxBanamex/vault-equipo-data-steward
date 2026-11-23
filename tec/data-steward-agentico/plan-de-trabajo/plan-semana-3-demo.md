@@ -18,7 +18,7 @@ resumen: Plan del 23 al 29 de noviembre - demo lista el martes 24 en dev (flujo 
 1. **Historia 1 de punta a punta en dev** (`dev.cem-steward.online`): subir una factura → extracción con `gemma3:4b` → reglas y políticas → hallazgos explicados → bandeja y detalle → decisión del analista → bitácora. Con 4 facturas preparadas: una correcta, una con total que no cuadra, una con campo faltante y una con un dato de baja confianza.
 2. **Chat con pasos visibles:** preguntas de gobernanza (con fuente) y preguntas sobre un caso ("¿por qué se rechazó?"), con la línea de pasos y su resumen.
 
-**Fuera de la demo** (se termina del 26 al 29): analista de datos y consulta libre, intención mixta, Historia 2 (registros en CSV), Cognito y JWT, prod y la regla de la lista 69-B.
+**Fuera de la demo** (se termina del 26 al 29): facturas en XML (CFDI), analista de datos y consulta libre, intención mixta, Historia 2 (registros en CSV), Cognito y JWT, prod y la regla de la lista 69-B.
 
 **Plan B:** si el lab o la laptop con Ollama fallan el miércoles, la demo corre en local en una laptop (`make up`), y hay un video de respaldo grabado el martes después del ensayo.
 
@@ -28,7 +28,7 @@ resumen: Plan del 23 al 29 de noviembre - demo lista el martes 24 en dev (flujo 
 | **Lunes 23** | Contratos aprobados por PR. Contexto del usuario en el MCP (S3-37). Ollama en dev con una sola laptop sirviendo los tres modelos. Datos sintéticos y RAG en `dsa_dev`. Convención de agentes documentada. Facturas de la demo elegidas |
 | **Martes 24** | Grafo de casos con tools reales. Endpoints reales y pantallas sin MSW en dev. Grafo del chat mínimo (gobernanza, casos, general y fuera de alcance) con SSE real. Guion. **Corte a las 17:00**, **ensayo general a las 20:00** y video de respaldo al terminar |
 | **Miércoles 25** | **Demo.** Comentarios anotados en una sesión del vault |
-| **Jueves 26** | Login con Cognito y base privada (movido del 24 para no arriesgar la demo). Supuestos en el documento del socio formador |
+| **Jueves 26** | Login con Cognito y base privada (movido del 24 para no arriesgar la demo). Vía rápida para facturas en XML (CFDI 4.0, S3-38). Supuestos en el documento del socio formador |
 | **Viernes 27** | Analista de datos con `obtener_metrica`, `buscar_facturas` y la consulta libre. Políticas con fundamento del SAT. Regla 69-B. Evaluación de gobernanza |
 | **Sábado 28** | Evaluaciones (casos de punta a punta, enrutador), prueba de instrucciones inyectadas, pruebas de punta a punta, intención mixta si alcanza, validación del JWT y prod |
 | **Domingo 29** | Presentación final, documentación y video de entrega |
