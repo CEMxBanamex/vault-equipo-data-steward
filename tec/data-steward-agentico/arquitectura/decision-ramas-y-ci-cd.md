@@ -99,3 +99,16 @@ Sesión: [[tec/data-steward-agentico/sesiones/2026-11-17-juan-pablo-fases-0-a-3-
   - Se desactivó el rebase merge.
   - Existen los environments `dev` y `prod`.
 - **Ramas:** se usan con el formato `<área>/<tema>-<nombre>` (por ejemplo `infra/terraform-juan-pablo`), que reemplaza al `<nombre>/<tarea>` de arriba.
+
+
+## Actualización 2026-11-22 (despliegue a dev funcionando)
+Sesión: [[tec/data-steward-agentico/sesiones/2026-11-22-juan-pablo-despliegue-dev|infraestructura de dev y primer despliegue]].
+
+- **`deploy-dev.yml` corre completo en cada push a `dev`:** imágenes en GHCR, `deploy.sh` en la EC2 de dev por el runner `dsa-dev` (migraciones, contenedores y prueba de salud) y frontend en Vercel con el alias `dev.<dominio>`.
+- **Paquetes de GHCR públicos.** La organización no permitía paquetes públicos; se habilitó en su configuración y solo los paquetes `backend` y `mcp` son públicos. Así la EC2 los baja sin token.
+- **Vercel:**
+  - `VERCEL_ORG_ID` es el ID `team_…` del equipo personal de la cuenta, no el ID de usuario. Se obtiene con `vercel link`.
+  - El `VERCEL_TOKEN` está limitado a la cuenta. Con ese token `vercel alias` falla (*User not found*), así que el alias de dev se asigna con la API REST de Vercel.
+  - *Deployment Protection* desactivado para que el equipo vea los despliegues de dev sin iniciar sesión en Vercel.
+- **Runner:** registrado con `scripts/runner/registrar.sh` por Session Manager; la variable `RUNNER_DEV_ACTIVO=true` activa el job del backend.
+- **Pendiente:** probar `deploy-prod.yml` al fusionar `dev` → `main`, después de aplicar `envs/prod`.

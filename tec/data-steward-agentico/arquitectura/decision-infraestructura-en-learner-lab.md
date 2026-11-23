@@ -146,3 +146,17 @@ Sesión: [[tec/data-steward-agentico/sesiones/2026-11-17-juan-pablo-fases-0-a-3-
 - **Pendiente verificar en el lab** (actualiza la lista de arriba):
   - ACM ya no se usa.
   - Falta confirmar que RDS pueda guardar la contraseña maestra en Secrets Manager y que AWS Budgets esté permitido.
+
+
+## Actualización 2026-11-22 (aplicado en el lab)
+Sesión: [[tec/data-steward-agentico/sesiones/2026-11-22-juan-pablo-despliegue-dev|infraestructura de dev y primer despliegue]]. Reemplaza lo que choque de arriba.
+
+- **Aplicado:** `bootstrap`, `shared` y `dev`. `prod` sigue sin aplicar hasta la primera promoción.
+- **Verificado en el lab** (cierra la lista de pendientes de arriba):
+  - RDS guarda la contraseña maestra en Secrets Manager.
+  - AWS Budgets está permitido: el presupuesto se creó con sus alertas (8, 14 y 20 USD) al correo configurado.
+  - SSM Run Command funciona con `LabInstanceProfile`, así que el despliegue a prod por SSM es viable.
+- **Buckets de S3 con la CLI.** Una SCP del lab niega `s3:GetBucketObjectLockConfiguration`, y el recurso `aws_s3_bucket` de Terraform la lee siempre. Los buckets se crean y se borran con la CLI de AWS desde un `terraform_data`; Terraform los lee con el data source y administra su configuración. Quien aplica necesita la CLI de AWS.
+- **Sin SSH.** Se entra a las EC2 por Session Manager; EC2 Instance Connect no funciona porque el puerto 22 está cerrado a propósito.
+- **`set_config` en RDS:** confirmado que `steward_consultas` puede ejecutarlo en `dsa_dev` y `dsa_prod`. La defensa principal es la validación del SQL de `ejecutar_consulta` (S1-08).
+- **DNS en Hostinger:** registro A de `api-dev` hacia la IP elástica de dev y CNAME de `dev` hacia Vercel. Faltan `api` (al aplicar prod) y `app`.
