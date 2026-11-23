@@ -14,6 +14,10 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-23
 
+### docs(mario): preguntas de casos de la demo que ve dev-ana · mario · PR #22
+- **Modificada:** [[tec/data-steward-agentico/sesiones/2026-11-23-mario-preguntas-demo-y-politicas-sat|2026-11-23-mario-preguntas-demo-y-politicas-sat]]
+  Las 8 preguntas del chat para la demo con su respuesta esperada (S3-20) y las versiones nuevas de P-001 y P-002 con el fundamento del SAT (S3-21).
+
 ### Iris · iris · PR #21
 - **Nueva:** [[tec/data-steward-agentico/plan-de-trabajo/propuesta-guion-demo-25-nov-iris|propuesta-guion-demo-25-nov-iris]]
   Guion de la demo del 25 nov. (11 min) - flujo de facturas en dev con 4 facturas y chat con 8 preguntas; quién presenta cada parte, URLs, preparación, plan B y avisos.
@@ -164,8 +168,3 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 ### docs: sesión de implementación del repo del equipo · juan-pablo · PR #1
 - **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-04-juan-pablo-implementacion-repo-equipo|2026-11-04-juan-pablo-implementacion-repo-equipo]]
   Implementación del repo compartido del vault: estructura, ramas, token, sincronización, validación de áreas, protección de main y repo público.
-
-### ci: validar que cada integrante solo modifique sus áreas · Juan Pablo Perez · push directo
-- **Modificada:** [[tec/data-steward-agentico/plan-de-trabajo/decision-vault-compartido-del-equipo|decision-vault-compartido-del-equipo]]
-  El vault del proyecto se comparte con el equipo en un repo de la organización, con una rama por integrante, PR a main y un Action que regenera índices y propaga main a todas las ramas.
-- **Cambios en el repo:** `.github/CODEOWNERS`, `.github/integrantes.txt`, `.github/workflows/validar-vault.yml`, `CLAUDE.md`, `scripts/validar_vault.py`

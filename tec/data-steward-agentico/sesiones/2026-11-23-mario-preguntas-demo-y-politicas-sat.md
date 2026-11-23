@@ -33,3 +33,13 @@ Avisos para el guion:
 - Las reglas no cambian; el catálogo cita las versiones nuevas. Se agregaron tres preguntas a `preguntas_rag.yaml` (vigencia en octubre, art. 29-A y Anexo 20).
 - **P-011 no cambia:** trata la estructura del RFC, no los requisitos de la factura.
 - Con embeddinggemma, `evaluar_rag.py --sin-bd` da acierto@1 94 %, acierto@5 97 % y 6/6 sin política (antes 93 %, 96 % y 6/6). Una primera versión con secciones cortas de fundamento hacía que "¿Cómo se calcula el ISR de la nómina?" trajera P-002; por eso el fundamento va en una sola sección y la sección 3 de P-001 no cambia.
+
+## Actualización 23 nov., tarde: casos que ve dev-ana
+En dev el chat entra como `dev-ana` (analista), que solo ve los casos de sus entidades. F-1040 y F-1041 son de Servicios Corporativos Demo (`dev-luis`), así que el chat diría que no existen. Se cambian (rama `datos/iris-demo-dev-ana` del repo de código; la prueba consulta los casos como `dev-ana`):
+
+| # | Pregunta | Respuesta esperada | Fuente |
+|---|---|---|---|
+| D-6 | ¿Por qué se rechazó la factura F-0936? | R-014: el total impreso es 29,585.36, pero subtotal más impuestos da 29,385.36 (diferencia de 200.00). El agente sugirió Rechazado y Ana López lo confirmó. | P-002 §5 |
+| D-8 | ¿Por qué se aceptó la factura F-1027? | No incumple ninguna regla: 13,994.05 + 2,239.05 = 16,233.10 MXN. El agente sugirió Aceptado y el analista lo confirmó. | — |
+
+D-7 (F-1042) no cambia: es de Comercializadora Demo, que `dev-ana` sí ve.
