@@ -1,6 +1,6 @@
 ---
 tipo: novedades
-fecha: 2026-11-17
+fecha: 2026-11-23
 autor: vault-bot
 resumen: Los últimos 20 cambios que llegaron a main, con liga a cada nota. Léelo al empezar.
 ---
@@ -11,6 +11,12 @@ _Lo genera GitHub Actions en cada cambio a `main`. No lo edites a mano._
 Muestra los últimos 20 cambios, del más reciente al más antiguo. Si una novedad toca lo que te piden, abre la nota enlazada antes de responder. Para cambios más antiguos, consulta el historial de Git de `main`.
 
 El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/tareas/_tablero|el tablero de tareas]].
+
+## 2026-11-23
+
+### docs: supuestos del piloto sin el socio formador · juan-pablo · PR #14
+- **Nueva:** [[tec/data-steward-agentico/plan-de-trabajo/decision-supuestos-sin-socio-formador|decision-supuestos-sin-socio-formador]]
+  Sin contacto con el socio formador, el piloto adopta como definitivos los supuestos de datos, reglas y gobernanza, y fundamenta las políticas de facturas en normas públicas del SAT (CFF art. 29-A, Anexo 20 y lista 69-B).
 
 ## 2026-11-17
 
