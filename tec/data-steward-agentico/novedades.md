@@ -14,6 +14,10 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-23
 
+### Mario · mario · PR #20
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-23-mario-preguntas-demo-y-politicas-sat|2026-11-23-mario-preguntas-demo-y-politicas-sat]]
+  Las 8 preguntas del chat para la demo con su respuesta esperada (S3-20) y las versiones nuevas de P-001 y P-002 con el fundamento del SAT (S3-21).
+
 ### docs: sesión del 23 nov. (semana 3, revisión de PR y subida a S3) · juan-pablo · PR #19
 - **Modificada:** [[tec/data-steward-agentico/arquitectura/decision-infraestructura-en-learner-lab|decision-infraestructura-en-learner-lab]]
   Infraestructura del MVP ajustada a AWS Learner Lab y al cierre de noviembre - EC2 de dev y prod detrás de un ALB compartido, RDS con pgvector, S3, SSM, imágenes en GHCR, frontend en Vercel y dominio propio fuera de AWS.
