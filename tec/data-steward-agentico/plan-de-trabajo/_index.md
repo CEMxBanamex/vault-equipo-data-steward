@@ -76,3 +76,7 @@ _No edites esta sección: la regenera GitHub Actions en cada cambio a main._
 | [[tec/data-steward-agentico/plan-de-trabajo/decision-supuestos-sin-socio-formador\|decision-supuestos-sin-socio-formador]] | decision | juan-pablo | 2026-11-20 | Sin contacto con el socio formador, el piloto adopta como definitivos los supuestos de datos, reglas y gobernanza, y fundamenta las políticas de facturas en normas públicas del SAT (CFF art. 29-A, Anexo 20 y lista 69-B). |
 | [[tec/data-steward-agentico/plan-de-trabajo/propuesta-avance-frente-datos-mario\|propuesta-avance-frente-datos-mario]] | propuesta | mario | 2026-11-09 | Registrar en el plan el avance del frente de datos y los supuestos sobre los datos de negocio. |
 <!-- indice-automatico:fin -->
+
+
+## Actualización 2026-11-23 (semana 3)
+- [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo|Plan de la semana 3: demo y cierre]]: demo lista el martes 24 en dev, sesión de demo el miércoles 25 y MVP completo el domingo 29. Las 37 tareas (S3-01 a S3-37) están en los archivos de `tareas/`.
