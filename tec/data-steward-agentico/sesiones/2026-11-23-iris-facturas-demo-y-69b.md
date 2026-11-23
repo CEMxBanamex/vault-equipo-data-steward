@@ -31,3 +31,9 @@ Probadas con `validar_reglas` sobre la extracción de referencia y la base sembr
 
 ## Pruebas
 272 en verde contra PostgreSQL + pgvector.
+
+## Actualización 23 nov., tarde: facturas que ve dev-ana
+- En dev la app y el chat entran como `dev-ana` (analista), que solo ve Grupo Financiero Demo, Banca Demo y Comercializadora Demo. `piloto_001.png` es de Servicios Corporativos Demo y además ya se usó en la prueba de S3-11, así que la factura correcta pasa a ser **`piloto_003.png`** con respaldo **`piloto_005.png`**.
+- Las otras tres principales sí son de entidades de `dev-ana`. El respaldo de baja confianza (`piloto_036.pdf`) no; solo sirve con el administrador.
+- Cambio en el repo de código: rama `datos/iris-demo-dev-ana`. La prueba revisa que el receptor de cada factura principal sea una entidad de `dev-ana`.
+- El guion quedó en [[tec/data-steward-agentico/plan-de-trabajo/propuesta-guion-demo-25-nov-iris|guion de la demo]] (S3-24).
