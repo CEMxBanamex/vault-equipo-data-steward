@@ -10,7 +10,7 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 
 **Actualizado:** 2026-11-23 (Ciudad de México). **Semana en curso:** Semana 3 · 23 al 29 nov.
 
-**Avance general:** 39 de 79 listas (49 %) · 3 en proceso · 3 bloqueadas · 34 pendientes.
+**Avance general:** 42 de 79 listas (53 %) · 2 en proceso · 3 bloqueadas · 32 pendientes.
 
 ## Hitos
 | Hito | Responsable | Vence | Estado |
@@ -42,8 +42,6 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 | Tarea | Responsable | Vence | Estado |
 |---|---|---|---|
 | **S3-01** Aprobar los contratos por PR (cierra S1-06) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S3-02** Ollama en dev | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | En proceso |
-| **S3-03** Datos sintéticos y RAG en dsa_dev | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
 | **S3-12** Convención de agentes documentada a partir del grafo de casos (cierra S1-32) | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | hoy | Pendiente |
 | **S3-14** Laptop de demo sirviendo los tres modelos por Tailscale | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
 | **S3-37** Contexto del usuario en el servidor MCP (PR 19 del repo de código) | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | hoy | Pendiente |
@@ -51,7 +49,6 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 | **S3-11** Grafo de casos con tools reales y gemma3:4b | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | mañana | Pendiente |
 | **S3-15** Grafo del chat mínimo para la demo (cierra S1-33) | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | mañana | Pendiente |
 | **S3-19** Agente de gobernanza en el chat para la demo (cierra S1-23) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | mañana | Bloqueado |
-| **S3-24** Guion de la demo | [[tec/data-steward-agentico/tareas/iris\|Iris]] | mañana | Pendiente |
 | **S3-25** Video de respaldo de la demo | [[tec/data-steward-agentico/tareas/iris\|Iris]] | mañana | Pendiente |
 | **S3-29** Prompt y pruebas del agente redactor | [[tec/data-steward-agentico/tareas/yael\|Yael]] | mañana | Pendiente |
 | **S3-30** Endpoints reales de casos y bitácora | [[tec/data-steward-agentico/tareas/yael\|Yael]] | mañana | Pendiente |
@@ -67,22 +64,21 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 |---|---|---|---|
 | **S1-32** Agente de ejemplo con la convención | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 12/11 | S1-06 |
 | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | S1-35 |
-| **S3-24** Guion de la demo | [[tec/data-steward-agentico/tareas/iris\|Iris]] | 24/11 | S3-20, S3-23 |
 | **S1-08** Primera versión de ejecutar_consulta, listar_vistas_consultables y consultar_catalogo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 27/11 | S1-06, S1-27 |
 
 ## Avance por frente
 | Frente | Listas | En proceso | Bloqueadas | Pendientes | Avance |
 |---|---|---|---|---|---|
-| Infraestructura y CI/CD | 10 | 1 | 0 | 10 | ▓▓▓▓▓░░░░░ 48 % |
-| Datos | 14 | 1 | 3 | 4 | ▓▓▓▓▓▓░░░░ 64 % |
+| Infraestructura y CI/CD | 12 | 0 | 0 | 9 | ▓▓▓▓▓▓░░░░ 57 % |
+| Datos | 15 | 1 | 3 | 3 | ▓▓▓▓▓▓▓░░░ 68 % |
 | Agentes y modelos | 7 | 1 | 0 | 12 | ▓▓▓▓░░░░░░ 35 % |
 | Frontend | 8 | 0 | 0 | 8 | ▓▓▓▓▓░░░░░ 50 % |
 
 ## Avance por persona
 | Persona | Listas | En proceso | Bloqueadas | Pendientes | Avance | Lo siguiente |
 |---|---|---|---|---|---|---|
-| [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10 | 1 | 0 | 10 | ▓▓▓▓▓░░░░░ 48 % | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) |
-| [[tec/data-steward-agentico/tareas/iris\|Iris]] | 8 | 0 | 0 | 4 | ▓▓▓▓▓▓▓░░░ 67 % | **S3-24** Guion de la demo |
+| [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 12 | 0 | 0 | 9 | ▓▓▓▓▓▓░░░░ 57 % | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) |
+| [[tec/data-steward-agentico/tareas/iris\|Iris]] | 9 | 0 | 0 | 3 | ▓▓▓▓▓▓▓▓░░ 75 % | **S3-25** Video de respaldo de la demo |
 | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 6 | 1 | 3 | 0 | ▓▓▓▓▓▓░░░░ 60 % | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales |
 | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 4 | 1 | 0 | 5 | ▓▓▓▓░░░░░░ 40 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
 | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 3 | 0 | 0 | 7 | ▓▓▓░░░░░░░ 30 % | **S1-32** Agente de ejemplo con la convención |
