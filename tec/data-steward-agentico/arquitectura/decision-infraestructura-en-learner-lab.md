@@ -160,3 +160,11 @@ Sesión: [[tec/data-steward-agentico/sesiones/2026-11-22-juan-pablo-despliegue-d
 - **Sin SSH.** Se entra a las EC2 por Session Manager; EC2 Instance Connect no funciona porque el puerto 22 está cerrado a propósito.
 - **`set_config` en RDS:** confirmado que `steward_consultas` puede ejecutarlo en `dsa_dev` y `dsa_prod`. La defensa principal es la validación del SQL de `ejecutar_consulta` (S1-08).
 - **DNS en Hostinger:** registro A de `api-dev` hacia la IP elástica de dev y CNAME de `dev` hacia Vercel. Faltan `api` (al aplicar prod) y `app`.
+
+
+## Actualización 2026-11-23 (Ollama en dev y parámetros manuales)
+Sesión: [[tec/data-steward-agentico/sesiones/2026-11-23-juan-pablo-semana-3-y-subida-s3|semana 3 y subida a S3]]. Reemplaza lo que choque de arriba.
+- **Ollama en dev:** `/dsa/dev/ollama_base_url` apunta a la laptop de Carlos Ramos por Tailscale y responde desde `dsa-dev`. La ACL de la tailnet deja pasar `dsa-dev` a esa laptop.
+- **Parámetro manual nuevo:** `/dsa/dev/mcp_dev_usuario = dev-ana`, creado con la CLI y fuera de Terraform. Si se recrea `envs/dev`, hay que volver a crearlo. El contenedor `mcp` lo recibe por `env_file: .env`, sin cambiar `deploy/docker-compose.yml`.
+- **Pruebas desde la EC2:** SSM Run Command sirve también para probar dev sin abrir el sitio desde otra red (se usó para S3-04).
+- **Red del trabajo de Juan Pablo:** bloquea el dominio del proyecto ("Connection reset by peer"). El ensayo y la demo van desde una red personal. No se instala Tailscale en equipos ni redes de trabajo.
