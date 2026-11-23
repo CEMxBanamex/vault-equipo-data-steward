@@ -12,3 +12,9 @@ Frente: Frontend. Estados: `[ ]` pendiente, `[/]` en proceso, `[x]` listo, `[!]`
 - [x] **S1-39** Stubs de FastAPI de los endpoints de sus pantallas · vence: 2026-11-10 · depende: S1-01, S1-34 · listo cuando: endpoints con modelos de Pydantic y datos fijos, listos para la revisión de contratos 
 - [x] **S1-40** Primera versión de consultar_caso y buscar_facturas · vence: 2026-11-13 · depende: S1-06, S1-27 · listo cuando: ambas tools pasan sus pruebas contra la base local · nota: ver la propuesta de Mario sobre estas tools
 - [x] **S1-41** Pantallas del chat y línea de pasos con MSW · vence: 2026-11-13 · depende: S1-30, S1-35 · listo cuando: el chat muestra respuestas y pasos con eventos SSE simulados
+
+## Semana 3 · 23 al 29 nov
+- [ ] **S3-33** Endpoint SSE real del chat · vence: 2026-11-24 · apoyo: carlos-ramos · depende: S3-15 · listo cuando: el endpoint transmite los pasos y la respuesta de stream_chat con el formato del contrato y guarda los pasos con cada mensaje
+- [ ] **S3-34** Chat sin MSW en dev · vence: 2026-11-24 · depende: S3-33 · listo cuando: en dev, el chat global y el panel del caso responden con la línea de pasos y su resumen
+- [ ] **S3-35** Agente de casos en el chat · vence: 2026-11-24 · apoyo: yael, carlos-ramos · depende: S3-15 · listo cuando: "¿por qué se rechazó la factura X?" responde con la regla y la evidencia usando consultar_caso y consultar_bitacora
+- [ ] **S3-36** Prueba de punta a punta del chat · vence: 2026-11-28 · depende: S3-34 · listo cuando: una prueba automatizada manda una pregunta de gobernanza y otra de casos y verifica los pasos y la respuesta
