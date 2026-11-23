@@ -14,6 +14,12 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-23
 
+### docs: S3-38 vía rápida para facturas en XML (CFDI 4.0) · juan-pablo · PR #18
+- **Modificada:** [[tec/data-steward-agentico/plan-de-trabajo/_index|_index]]
+  Organización del Equipo 1: integrantes, reparto por frentes, plan por fases según dependencias, contratos y ruta crítica.
+- **Modificada:** [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo|plan-semana-3-demo]]
+  Plan del 23 al 29 de noviembre - demo lista el martes 24 en dev (flujo de facturas de punta a punta y chat con gobernanza y casos), ensayo el martes a las 20:00, demo el miércoles 25 y cierre del MVP antes del 30.
+
 ### docs: cerrar S1-06 con los contratos congelados en dev y destrabar S3-15 · juan-pablo · PR #17
 - **Modificada:** [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo|plan-semana-3-demo]]
   Plan del 23 al 29 de noviembre - demo lista el martes 24 en dev (flujo de facturas de punta a punta y chat con gobernanza y casos), ensayo el martes a las 20:00, demo el miércoles 25 y cierre del MVP antes del 30.
