@@ -9,9 +9,12 @@ resumen: Tareas de Mauricio (Frontend) por semana y su estado. Solo Mauricio las
 Frente: Frontend. Estados: `[ ]` pendiente, `[/]` en proceso, `[x]` listo, `[!]` bloqueado (agrega `· bloqueo: <motivo>`). Cambia solo la casilla y, si hace falta, `bloqueo` o `nota`. Formato y reglas: [[tec/data-steward-agentico/tareas/_index|tareas]]. Estado del equipo: [[tec/data-steward-agentico/tareas/_tablero|tablero]].
 
 ## Semana 1 · 9 al 13 nov
-- [x] **S1-39** Stubs de FastAPI de los endpoints de sus pantallas · vence: 2026-11-10 · depende: S1-01, S1-34 · listo cuando: endpoints con modelos de Pydantic y datos fijos, listos para la revisión de contratos 
+- [x] **S1-39** Stubs de FastAPI de los endpoints de sus pantallas · vence: 2026-11-10 · depende: S1-01, S1-34 · listo cuando: endpoints con modelos de Pydantic y datos fijos, listos para la revisión de contratos  · 
+	nota: PR #18 actualizado con el contrato SSE compartido; comprobaciones de GitHub aprobadas; pendiente de revisión e integración
 - [x] **S1-40** Primera versión de consultar_caso y buscar_facturas · vence: 2026-11-13 · depende: S1-06, S1-27 · listo cuando: ambas tools pasan sus pruebas contra la base local · nota: ver la propuesta de Mario sobre estas tools
+	nota: PR #21 aprobado e integrado en dev; herramientas y pruebas incorporadas
 - [x] **S1-41** Pantallas del chat y línea de pasos con MSW · vence: 2026-11-13 · depende: S1-30, S1-35 · listo cuando: el chat muestra respuestas y pasos con eventos SSE simulados
+	nota: PR #20 actualizado con tipo y fuentes; comprobaciones de GitHub aprobadas; pendiente de integración con el PR #13 de Yael y unificación de MSW
 
 ## Semana 3 · 23 al 29 nov
 - [ ] **S3-33** Endpoint SSE real del chat · vence: 2026-11-24 · apoyo: carlos-ramos · depende: S3-15 · listo cuando: el endpoint transmite los pasos y la respuesta de stream_chat con el formato del contrato y guarda los pasos con cada mensaje
