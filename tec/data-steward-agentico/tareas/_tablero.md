@@ -10,7 +10,7 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 
 **Actualizado:** 2026-11-23 (Ciudad de México). **Semana en curso:** Semana 3 · 23 al 29 nov.
 
-**Avance general:** 37 de 79 listas (47 %) · 3 en proceso · 1 bloqueadas · 38 pendientes.
+**Avance general:** 39 de 79 listas (49 %) · 3 en proceso · 3 bloqueadas · 34 pendientes.
 
 ## Hitos
 | Hito | Responsable | Vence | Estado |
@@ -25,6 +25,8 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 | Tarea | Responsable | Motivo |
 |---|---|---|
 | **S1-23** Conectar el agente de gobernanza al grafo del chat | [[tec/data-steward-agentico/tareas/mario\|Mario]] | el grafo del chat no existe aún; espera S1-33 y S1-32 (carlos-ramos) |
+| **S3-19** Agente de gobernanza en el chat para la demo (cierra S1-23) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | espera el grafo del chat (S3-15, carlos-ramos) y el contexto del usuario en el MCP (S3-37, carlos-delgado); el prompt y las tools ya están en dev |
+| **S3-22** Evaluar las respuestas del agente de gobernanza (cierra S1-22) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | espera la laptop de demo con el modelo de chat (S3-14, carlos-ramos) |
 
 ## Vencidas
 | Tarea | Responsable | Venció | Estado |
@@ -48,8 +50,7 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 | **S3-05** Ensayo general de la demo en dev | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
 | **S3-11** Grafo de casos con tools reales y gemma3:4b | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | mañana | Pendiente |
 | **S3-15** Grafo del chat mínimo para la demo (cierra S1-33) | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | mañana | Pendiente |
-| **S3-19** Agente de gobernanza en el chat para la demo (cierra S1-23) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | mañana | Pendiente |
-| **S3-20** Preguntas del chat para la demo | [[tec/data-steward-agentico/tareas/mario\|Mario]] | mañana | Pendiente |
+| **S3-19** Agente de gobernanza en el chat para la demo (cierra S1-23) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | mañana | Bloqueado |
 | **S3-24** Guion de la demo | [[tec/data-steward-agentico/tareas/iris\|Iris]] | mañana | Pendiente |
 | **S3-25** Video de respaldo de la demo | [[tec/data-steward-agentico/tareas/iris\|Iris]] | mañana | Pendiente |
 | **S3-29** Prompt y pruebas del agente redactor | [[tec/data-steward-agentico/tareas/yael\|Yael]] | mañana | Pendiente |
@@ -66,13 +67,14 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 |---|---|---|---|
 | **S1-32** Agente de ejemplo con la convención | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 12/11 | S1-06 |
 | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | S1-35 |
+| **S3-24** Guion de la demo | [[tec/data-steward-agentico/tareas/iris\|Iris]] | 24/11 | S3-20, S3-23 |
 | **S1-08** Primera versión de ejecutar_consulta, listar_vistas_consultables y consultar_catalogo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 27/11 | S1-06, S1-27 |
 
 ## Avance por frente
 | Frente | Listas | En proceso | Bloqueadas | Pendientes | Avance |
 |---|---|---|---|---|---|
 | Infraestructura y CI/CD | 10 | 1 | 0 | 10 | ▓▓▓▓▓░░░░░ 48 % |
-| Datos | 12 | 1 | 1 | 8 | ▓▓▓▓▓▓░░░░ 55 % |
+| Datos | 14 | 1 | 3 | 4 | ▓▓▓▓▓▓░░░░ 64 % |
 | Agentes y modelos | 7 | 1 | 0 | 12 | ▓▓▓▓░░░░░░ 35 % |
 | Frontend | 8 | 0 | 0 | 8 | ▓▓▓▓▓░░░░░ 50 % |
 
@@ -81,7 +83,7 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 |---|---|---|---|---|---|---|
 | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 10 | 1 | 0 | 10 | ▓▓▓▓▓░░░░░ 48 % | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) |
 | [[tec/data-steward-agentico/tareas/iris\|Iris]] | 8 | 0 | 0 | 4 | ▓▓▓▓▓▓▓░░░ 67 % | **S3-24** Guion de la demo |
-| [[tec/data-steward-agentico/tareas/mario\|Mario]] | 4 | 1 | 1 | 4 | ▓▓▓▓░░░░░░ 40 % | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales |
+| [[tec/data-steward-agentico/tareas/mario\|Mario]] | 6 | 1 | 3 | 0 | ▓▓▓▓▓▓░░░░ 60 % | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales |
 | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 4 | 1 | 0 | 5 | ▓▓▓▓░░░░░░ 40 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
 | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 3 | 0 | 0 | 7 | ▓▓▓░░░░░░░ 30 % | **S1-32** Agente de ejemplo con la convención |
 | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 5 | 0 | 0 | 4 | ▓▓▓▓▓▓░░░░ 56 % | **S3-29** Prompt y pruebas del agente redactor |
