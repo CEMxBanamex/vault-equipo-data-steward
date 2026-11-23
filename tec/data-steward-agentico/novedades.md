@@ -14,6 +14,12 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-23
 
+### docs: plan de la semana 3 (demo y cierre) y sus 37 tareas · juan-pablo · PR #16
+- **Nueva:** [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo|plan-semana-3-demo]]
+  Plan del 23 al 29 de noviembre - demo lista el martes 24 en dev (flujo de facturas de punta a punta y chat con gobernanza y casos), ensayo el martes a las 20:00, demo el miércoles 25 y cierre del MVP antes del 30.
+- **Modificada:** [[tec/data-steward-agentico/plan-de-trabajo/_index|_index]]
+  Organización del Equipo 1: integrantes, reparto por frentes, plan por fases según dependencias, contratos y ruta crítica.
+
 ### docs: sesión del despliegue de dev e infraestructura aplicada · juan-pablo · PR #15
 - **Modificada:** [[tec/data-steward-agentico/arquitectura/decision-infraestructura-en-learner-lab|decision-infraestructura-en-learner-lab]]
   Infraestructura del MVP ajustada a AWS Learner Lab y al cierre de noviembre - EC2 de dev y prod detrás de un ALB compartido, RDS con pgvector, S3, SSM, imágenes en GHCR, frontend en Vercel y dominio propio fuera de AWS.

@@ -74,5 +74,10 @@ _No edites esta sección: la regenera GitHub Actions en cada cambio a main._
 | [[tec/data-steward-agentico/plan-de-trabajo/decision-vault-compartido-del-equipo\|decision-vault-compartido-del-equipo]] | decision | juan-pablo | 2026-11-04 | El vault del proyecto se comparte con el equipo en un repo de la organización, con una rama por integrante, PR a main y un Action que regenera índices y propaga main a todas las ramas. |
 | [[tec/data-steward-agentico/plan-de-trabajo/decision-tareas-por-integrante\|decision-tareas-por-integrante]] | decision | juan-pablo | 2026-11-09 | Las tareas viven en un archivo por integrante dentro de tareas/, que solo marca su dueño y se publica en main sin PR; un Action genera el tablero del equipo. |
 | [[tec/data-steward-agentico/plan-de-trabajo/decision-supuestos-sin-socio-formador\|decision-supuestos-sin-socio-formador]] | decision | juan-pablo | 2026-11-20 | Sin contacto con el socio formador, el piloto adopta como definitivos los supuestos de datos, reglas y gobernanza, y fundamenta las políticas de facturas en normas públicas del SAT (CFF art. 29-A, Anexo 20 y lista 69-B). |
+| [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo\|plan-semana-3-demo]] | plan | juan-pablo | 2026-11-23 | Plan del 23 al 29 de noviembre - demo lista el martes 24 en dev (flujo de facturas de punta a punta y chat con gobernanza y casos), ensayo el martes a las 20:00, demo el miércoles 25 y cierre del MVP antes del 30. |
 | [[tec/data-steward-agentico/plan-de-trabajo/propuesta-avance-frente-datos-mario\|propuesta-avance-frente-datos-mario]] | propuesta | mario | 2026-11-09 | Registrar en el plan el avance del frente de datos y los supuestos sobre los datos de negocio. |
 <!-- indice-automatico:fin -->
+
+
+## Actualización 2026-11-23 (semana 3)
+- [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo|Plan de la semana 3: demo y cierre]]: demo lista el martes 24 en dev, sesión de demo el miércoles 25 y MVP completo el domingo 29. Las 37 tareas (S3-01 a S3-37) están en los archivos de `tareas/`.
