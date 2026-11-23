@@ -69,3 +69,10 @@ Backend en FastAPI + LangGraph, tools en un servidor MCP, frontend en Vite + Rea
 - Al empezar, lee también [[tec/data-steward-agentico/tareas/_tablero|el tablero de tareas]] y el archivo de tareas de la persona con la que trabajas.
 - Cuando terminen algo que corresponde a una tarea, propón marcarla en su archivo. Nunca edites el archivo de tareas de otra persona ni `_tablero.md`.
 - Sesión: [[tec/data-steward-agentico/sesiones/2026-11-09-juan-pablo-tareas-por-integrante|2026-11-09 tareas por integrante]].
+
+
+## Actualización 2026-11-23 (semana 3)
+- [[tec/data-steward-agentico/plan-de-trabajo/plan-semana-3-demo|Plan de la semana 3]]: demo lista el martes 24 en dev (corte a las 17:00, ensayo a las 20:00), demo el miércoles 25 y MVP el domingo 29. Tareas S3-01 a S3-38 en `tareas/`.
+- S1-06 cerrada: los contratos de tools y de eventos SSE quedan congelados en dev.
+- Dev ya usa el Ollama de una laptop del equipo por Tailscale y tiene el endpoint de subida directa a S3 (S3-04).
+- Sesión: [[tec/data-steward-agentico/sesiones/2026-11-23-juan-pablo-semana-3-y-subida-s3|semana 3 y subida a S3]].
