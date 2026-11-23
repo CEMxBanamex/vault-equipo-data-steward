@@ -14,6 +14,12 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-23
 
+### Iris · iris · PR #21
+- **Nueva:** [[tec/data-steward-agentico/plan-de-trabajo/propuesta-guion-demo-25-nov-iris|propuesta-guion-demo-25-nov-iris]]
+  Guion de la demo del 25 nov. (11 min) - flujo de facturas en dev con 4 facturas y chat con 8 preguntas; quién presenta cada parte, URLs, preparación, plan B y avisos.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-23-iris-facturas-demo-y-69b|2026-11-23-iris-facturas-demo-y-69b]]
+  Facturas de la demo (S3-23) con sus respaldos y regla R-019 de la lista 69-B del SAT (S3-26); avisos para el ensayo y la demo.
+
 ### Mario · mario · PR #20
 - **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-23-mario-preguntas-demo-y-politicas-sat|2026-11-23-mario-preguntas-demo-y-politicas-sat]]
   Las 8 preguntas del chat para la demo con su respuesta esperada (S3-20) y las versiones nuevas de P-001 y P-002 con el fundamento del SAT (S3-21).
@@ -163,19 +169,3 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 - **Modificada:** [[tec/data-steward-agentico/plan-de-trabajo/decision-vault-compartido-del-equipo|decision-vault-compartido-del-equipo]]
   El vault del proyecto se comparte con el equipo en un repo de la organización, con una rama por integrante, PR a main y un Action que regenera índices y propaga main a todas las ramas.
 - **Cambios en el repo:** `.github/CODEOWNERS`, `.github/integrantes.txt`, `.github/workflows/validar-vault.yml`, `CLAUDE.md`, `scripts/validar_vault.py`
-
-### Full Context and Organization / Juan Pablo · Juan Pablo Perez · push directo
-- **Nueva:** [[tec/data-steward-agentico/agentes/decision-checkpoints-y-bitacora-separados|decision-checkpoints-y-bitacora-separados]]
-  Los checkpoints de LangGraph son el estado operativo del caso; la bitácora de auditoría es una tabla propia y es el registro oficial.
-- **Nueva:** [[tec/data-steward-agentico/agentes/decision-sin-tool-para-liberar-pagos|decision-sin-tool-para-liberar-pagos]]
-  El servidor MCP no expone ninguna tool para liberar pagos ni ejecutar operaciones, así que el límite del agente lo impone la arquitectura y no solo el prompt.
-- **Nueva:** [[tec/data-steward-agentico/agentes/decision-validaciones-deterministas-en-codigo|decision-validaciones-deterministas-en-codigo]]
-  Sumas, campos obligatorios y formatos se comprueban con código determinista en la tool validar_reglas; el LLM extrae, busca y explica, pero no calcula.
-- **Nueva:** [[tec/data-steward-agentico/arquitectura/decision-jwt-al-final|decision-jwt-al-final]]
-  El login con Cognito por correo se conecta temprano en el frontend, pero la validación del JWT en las APIs se activa al final con un interruptor AUTH_MODE, para probar fácil con Postman.
-- **Nueva:** [[tec/data-steward-agentico/arquitectura/decision-monolito-modular|decision-monolito-modular]]
-  Un solo repositorio y un solo servicio desplegable, con los agentes como nodos de un grafo LangGraph, porque es lo más simple de desplegar y depurar para un MVP con equipo chico.
-- **Nueva:** [[tec/data-steward-agentico/arquitectura/decision-subida-directa-a-s3|decision-subida-directa-a-s3]]
-  El navegador sube el archivo del caso directo a S3 con una URL prefirmada, sin pasar por el backend.
-- **59 notas más** en `agentes/`, `arquitectura/`, `chat/`, `interfaces/`, `modelos/`, `plan-de-trabajo/`, `producto/`, `sesiones/`, `tec/data-steward-agentico/`, `tools/`
-- **Cambios en el repo:** `.gitattributes`, `.github/CODEOWNERS`, `.github/integrantes.txt`, `.github/workflows/sincronizar.yml`, `.github/workflows/validar-vault.yml` y 13 más
