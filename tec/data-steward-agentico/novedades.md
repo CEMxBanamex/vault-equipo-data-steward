@@ -14,6 +14,14 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-23
 
+### docs: sesión del despliegue de dev e infraestructura aplicada · juan-pablo · PR #15
+- **Modificada:** [[tec/data-steward-agentico/arquitectura/decision-infraestructura-en-learner-lab|decision-infraestructura-en-learner-lab]]
+  Infraestructura del MVP ajustada a AWS Learner Lab y al cierre de noviembre - EC2 de dev y prod detrás de un ALB compartido, RDS con pgvector, S3, SSM, imágenes en GHCR, frontend en Vercel y dominio propio fuera de AWS.
+- **Modificada:** [[tec/data-steward-agentico/arquitectura/decision-ramas-y-ci-cd|decision-ramas-y-ci-cd]]
+  Repo de código con ramas por tarea → dev → main; push a dev despliega al EC2 de dev y fusionar dev a main promueve a prod la misma imagen ya probada, con CI en cada PR, imágenes en GHCR y un runner self-hosted.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-22-juan-pablo-despliegue-dev|2026-11-22-juan-pablo-despliegue-dev]]
+  Infraestructura de dev aplicada en el Learner Lab y primer despliegue automático completo (backend en EC2 con migraciones, frontend en Vercel), con los arreglos que pidió el lab; S1-05, S1-07 y S1-10 listas.
+
 ### docs: supuestos del piloto sin el socio formador · juan-pablo · PR #14
 - **Nueva:** [[tec/data-steward-agentico/plan-de-trabajo/decision-supuestos-sin-socio-formador|decision-supuestos-sin-socio-formador]]
   Sin contacto con el socio formador, el piloto adopta como definitivos los supuestos de datos, reglas y gobernanza, y fundamenta las políticas de facturas en normas públicas del SAT (CFF art. 29-A, Anexo 20 y lista 69-B).
