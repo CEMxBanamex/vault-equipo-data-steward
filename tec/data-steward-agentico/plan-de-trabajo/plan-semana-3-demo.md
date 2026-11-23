@@ -35,14 +35,14 @@ resumen: Plan del 23 al 29 de noviembre - demo lista el martes 24 en dev (flujo 
 
 ## Ruta crítica para el martes
 `S3-14` laptop de demo → `S3-02` Ollama en dev → `S3-11` grafo de casos real → `S3-30` endpoints reales → `S3-31` pantallas sin MSW → `S3-05` ensayo.
-En paralelo: `S3-12` convención → `S3-15` grafo del chat → `S3-19` gobernanza (también necesita `S3-37`, el contexto del usuario en el MCP) y `S3-35` casos en el chat → `S3-33` SSE real → `S3-34` chat sin MSW → `S3-05` ensayo.
+En paralelo: `S3-15` grafo del chat (no espera a `S3-12`: arranca con la convención de S1-27 y el grafo de casos de S1-28) → `S3-19` gobernanza (también necesita `S3-37`, el contexto del usuario en el MCP) y `S3-35` casos en el chat → `S3-33` SSE real → `S3-34` chat sin MSW → `S3-05` ensayo.
 
 **Corte a las 17:00 del martes:** si a esa hora el chat no responde en dev, el ensayo de las 20:00 y la demo muestran el flujo de casos en dev y el chat en local. Así quedan tres horas para preparar el plan B sin improvisar en el ensayo.
 
 ## Tareas de la semana 1 que siguen abiertas
 | Tarea | Qué pasa con ella |
 |---|---|
-| S1-06 Contratos | Se cierra con S3-01 |
+| S1-06 Contratos | Cerrada el 23: contratos de tools y SSE congelados en dev; S3-01 queda para los endpoints del chat (PR 18) |
 | S1-08 Tools de consulta libre | Se mueve al viernes 27, antes de S3-16 |
 | S1-09 Login con Cognito | Se cierra con S3-07 |
 | S1-11 Checkpoint del 13 nov. | Cerrada: ya no aplica; la reemplazan S3-05 y S3-06 |
