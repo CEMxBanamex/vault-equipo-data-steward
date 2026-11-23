@@ -10,12 +10,12 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 
 **Actualizado:** 2026-11-23 (Ciudad de México). **Semana en curso:** Semana 3 · 23 al 29 nov.
 
-**Avance general:** 33 de 78 listas (42 %) · 2 en proceso · 1 bloqueadas · 42 pendientes.
+**Avance general:** 34 de 78 listas (44 %) · 2 en proceso · 1 bloqueadas · 41 pendientes.
 
 ## Hitos
 | Hito | Responsable | Vence | Estado |
 |---|---|---|---|
-| **S1-06** Sesión de revisión de contratos y PR aprobado a main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 11/11 | Pendiente |
+| **S1-06** Sesión de revisión de contratos y PR aprobado a main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 11/11 | Listo |
 | **S1-11** Checkpoint del viernes (30 min) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | Listo |
 | **S3-05** Ensayo general de la demo en dev | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 24/11 | Pendiente |
 | **S3-06** Demo del miércoles | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 25/11 | Pendiente |
@@ -29,7 +29,6 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 ## Vencidas
 | Tarea | Responsable | Venció | Estado |
 |---|---|---|---|
-| **S1-06** Sesión de revisión de contratos y PR aprobado a main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 11/11 | Pendiente |
 | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 11/11 | En proceso |
 | **S1-32** Agente de ejemplo con la convención | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 12/11 | Pendiente |
 | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | Pendiente |
@@ -67,13 +66,14 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 
 | Tarea | Responsable | Vence | Dependía de |
 |---|---|---|---|
-| **S1-06** Sesión de revisión de contratos y PR aprobado a main | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 11/11 | S1-30, S1-36, S1-39 |
+| **S1-32** Agente de ejemplo con la convención | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | 12/11 | S1-06 |
 | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | S1-35 |
+| **S1-08** Primera versión de ejecutar_consulta, listar_vistas_consultables y consultar_catalogo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 27/11 | S1-06, S1-27 |
 
 ## Avance por frente
 | Frente | Listas | En proceso | Bloqueadas | Pendientes | Avance |
 |---|---|---|---|---|---|
-| Infraestructura y CI/CD | 8 | 0 | 0 | 13 | ▓▓▓▓░░░░░░ 38 % |
+| Infraestructura y CI/CD | 9 | 0 | 0 | 12 | ▓▓▓▓░░░░░░ 43 % |
 | Datos | 10 | 1 | 1 | 10 | ▓▓▓▓░░░░░░ 45 % |
 | Agentes y modelos | 7 | 1 | 0 | 11 | ▓▓▓▓░░░░░░ 37 % |
 | Frontend | 8 | 0 | 0 | 8 | ▓▓▓▓▓░░░░░ 50 % |
@@ -81,7 +81,7 @@ _Pendientes cuyas dependencias ya están listas: se pueden empezar._
 ## Avance por persona
 | Persona | Listas | En proceso | Bloqueadas | Pendientes | Avance | Lo siguiente |
 |---|---|---|---|---|---|---|
-| [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 8 | 0 | 0 | 13 | ▓▓▓▓░░░░░░ 38 % | **S1-06** Sesión de revisión de contratos y PR aprobado a main |
+| [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 9 | 0 | 0 | 12 | ▓▓▓▓░░░░░░ 43 % | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) |
 | [[tec/data-steward-agentico/tareas/iris\|Iris]] | 6 | 0 | 0 | 6 | ▓▓▓▓▓░░░░░ 50 % | **S3-23** Facturas de la demo |
 | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 4 | 1 | 1 | 4 | ▓▓▓▓░░░░░░ 40 % | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales |
 | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 4 | 1 | 0 | 4 | ▓▓▓▓░░░░░░ 44 % | **S1-26** Evaluación controlada del modelo de visión y decisión: local o Bedrock |
