@@ -14,6 +14,16 @@ El avance de las tareas no aparece aquí: está en [[tec/data-steward-agentico/t
 
 ## 2026-11-23
 
+### docs: sesión del 23 nov. (semana 3, revisión de PR y subida a S3) · juan-pablo · PR #19
+- **Modificada:** [[tec/data-steward-agentico/arquitectura/decision-infraestructura-en-learner-lab|decision-infraestructura-en-learner-lab]]
+  Infraestructura del MVP ajustada a AWS Learner Lab y al cierre de noviembre - EC2 de dev y prod detrás de un ALB compartido, RDS con pgvector, S3, SSM, imágenes en GHCR, frontend en Vercel y dominio propio fuera de AWS.
+- **Modificada:** [[tec/data-steward-agentico/arquitectura/decision-subida-directa-a-s3|decision-subida-directa-a-s3]]
+  El navegador sube el archivo del caso directo a S3 con una URL prefirmada, sin pasar por el backend.
+- **Nueva:** [[tec/data-steward-agentico/sesiones/2026-11-23-juan-pablo-semana-3-y-subida-s3|2026-11-23-juan-pablo-semana-3-y-subida-s3]]
+  Plan y tareas de la semana 3, revisión de los PR abiertos, S1-06 cerrada, Ollama de Carlos Ramos conectado a dev, MCP como dev-ana y endpoint de URL prefirmada para subir a S3 (S3-04) probado en dev.
+- **Modificada:** [[tec/data-steward-agentico/CLAUDE|CLAUDE]]
+  MVP de Data Steward Agéntico para un reto del Tec con un banco como socio formador: agentes LangGraph con tools por MCP que revisan facturas y registros contra políticas, explican cada recomendación y dejan la decisión a una persona.
+
 ### docs: S3-38 vía rápida para facturas en XML (CFDI 4.0) · juan-pablo · PR #18
 - **Modificada:** [[tec/data-steward-agentico/plan-de-trabajo/_index|_index]]
   Organización del Equipo 1: integrantes, reparto por frentes, plan por fases según dependencias, contratos y ruta crítica.
