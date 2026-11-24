@@ -13,7 +13,7 @@ Frente: Agentes y modelos. Estados: `[ ]` pendiente, `[/]` en proceso, `[x]` lis
 - [x] **S1-30** Borrador de los eventos SSE del chat · vence: 2026-11-10 · apoyo: mauricio · listo cuando: modelos de Pydantic de los eventos en contratos/ con una secuencia de ejemplo
 - [x] **S1-31** Prueba rápida de text-to-SQL con el modelo local · vence: 2026-11-11 · listo cuando: 10 preguntas sobre las vistas de Mario, con el SQL generado y cuántas salieron correctas
 - [x] **S1-32** Agente de ejemplo con la convención · vence: 2026-11-12 · apoyo: carlos-delgado · depende: S1-06 · listo cuando: un agente con prompt, manejo de errores, pasos y pruebas, documentado para copiarlo
-- [ ] **S1-33** Esqueleto del grafo del chat con tools falsas · vence: 2026-11-13 · depende: S1-32 · listo cuando: stream_chat enruta por dominio, incluida la intención mixta, con tools falsas y emite los eventos SSE
+- [x] **S1-33** Esqueleto del grafo del chat con tools falsas · vence: 2026-11-13 · depende: S1-32 · listo cuando: stream_chat enruta por dominio, incluida la intención mixta, con tools falsas y emite los eventos SSE
 
 ## Semana 3 · 23 al 29 nov
 - [ ] **S3-14** Laptop de demo sirviendo los tres modelos por Tailscale · vence: 2026-11-23 · apoyo: juan-pablo · listo cuando: una sola URL de Ollama sirve gemma3:4b, embeddinggemma:300m y el modelo de chat, y responde desde dsa-dev · nota: si no cabe en la VRAM, el modelo de chat va en una segunda laptop y se avisa a juan-pablo para usar una URL por rol
