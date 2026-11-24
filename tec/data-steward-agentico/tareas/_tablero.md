@@ -1,6 +1,6 @@
 ---
 tipo: tablero
-fecha: 2026-11-23
+fecha: 2026-11-24
 autor: vault-bot
 resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar.
 ---
@@ -8,7 +8,7 @@ resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo
 
 _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a mano: marca tus tareas en tu archivo. Cómo funciona: [[tec/data-steward-agentico/tareas/_index|tareas]]._
 
-**Actualizado:** 2026-11-23 (Ciudad de México). **Semana en curso:** Semana 3 · 23 al 29 nov.
+**Actualizado:** 2026-11-24 (Ciudad de México). **Semana en curso:** Semana 3 · 23 al 29 nov.
 
 **Avance general:** 47 de 79 listas (59 %) · 2 en proceso · 3 bloqueadas · 27 pendientes.
 
@@ -35,22 +35,23 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 | **S1-09** Login con Cognito por correo (AUTH_MODE sin validar el JWT) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 13/11 | Pendiente |
 | **S1-22** Calibrar el RAG y evaluar el agente de gobernanza con los modelos reales | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 13/11 | En proceso |
 | **S1-23** Conectar el agente de gobernanza al grafo del chat | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 13/11 | Bloqueado |
+| **S3-01** Aprobar los contratos por PR (cierra S1-06) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 23/11 | Pendiente |
+| **S3-37** Contexto del usuario en el servidor MCP (PR 19 del repo de código) | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 23/11 | Pendiente |
 
 ## Vencen hoy y mañana
 | Tarea | Responsable | Vence | Estado |
 |---|---|---|---|
-| **S3-01** Aprobar los contratos por PR (cierra S1-06) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S3-37** Contexto del usuario en el servidor MCP (PR 19 del repo de código) | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | hoy | Pendiente |
-| **S3-05** Ensayo general de la demo en dev | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
-| **S3-11** Grafo de casos con tools reales y gemma3:4b | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | mañana | Pendiente |
-| **S3-15** Grafo del chat mínimo para la demo (cierra S1-33) | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | mañana | Pendiente |
-| **S3-19** Agente de gobernanza en el chat para la demo (cierra S1-23) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | mañana | Bloqueado |
-| **S3-25** Video de respaldo de la demo | [[tec/data-steward-agentico/tareas/iris\|Iris]] | mañana | Pendiente |
-| **S3-29** Prompt y pruebas del agente redactor | [[tec/data-steward-agentico/tareas/yael\|Yael]] | mañana | Pendiente |
-| **S3-30** Endpoints reales de casos y bitácora | [[tec/data-steward-agentico/tareas/yael\|Yael]] | mañana | Pendiente |
-| **S3-31** Pantallas de casos y bitácora sin MSW en dev | [[tec/data-steward-agentico/tareas/yael\|Yael]] | mañana | Pendiente |
-| **S3-34** Chat sin MSW en dev | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | mañana | Pendiente |
-| **S3-35** Agente de casos en el chat | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | mañana | Pendiente |
+| **S3-05** Ensayo general de la demo en dev | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
+| **S3-11** Grafo de casos con tools reales y gemma3:4b | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | hoy | Pendiente |
+| **S3-15** Grafo del chat mínimo para la demo (cierra S1-33) | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
+| **S3-19** Agente de gobernanza en el chat para la demo (cierra S1-23) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | hoy | Bloqueado |
+| **S3-25** Video de respaldo de la demo | [[tec/data-steward-agentico/tareas/iris\|Iris]] | hoy | Pendiente |
+| **S3-29** Prompt y pruebas del agente redactor | [[tec/data-steward-agentico/tareas/yael\|Yael]] | hoy | Pendiente |
+| **S3-30** Endpoints reales de casos y bitácora | [[tec/data-steward-agentico/tareas/yael\|Yael]] | hoy | Pendiente |
+| **S3-31** Pantallas de casos y bitácora sin MSW en dev | [[tec/data-steward-agentico/tareas/yael\|Yael]] | hoy | Pendiente |
+| **S3-34** Chat sin MSW en dev | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | hoy | Pendiente |
+| **S3-35** Agente de casos en el chat | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | hoy | Pendiente |
+| **S3-06** Demo del miércoles | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
 
 ## Se destrabaron
 _Pendientes cuyas dependencias ya están listas: se pueden empezar._
