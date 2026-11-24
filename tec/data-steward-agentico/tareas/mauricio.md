@@ -22,4 +22,5 @@ Frente: Frontend. Estados: `[ ]` pendiente, `[/]` en proceso, `[x]` listo, `[!]`
 - [ ] **S3-34** Chat sin MSW en dev · vence: 2026-11-24 · depende: S3-33 · listo cuando: en dev, el chat global y el panel del caso responden con la línea de pasos y su resumen
 	nota: PR #40 en borrador y con comprobaciones aprobadas; chat global y contextual probados localmente sin MSW, pendiente integración y verificación en dev
 - [ ] **S3-35** Agente de casos en el chat · vence: 2026-11-24 · apoyo: yael, carlos-ramos · depende: S3-15 · listo cuando: "¿por qué se rechazó la factura X?" responde con la regla y la evidencia usando consultar_caso y consultar_bitacora
-- [ ] **S3-36** Prueba de punta a punta del chat · vence: 2026-11-28 · depende: S3-34 · listo cuando: una prueba automatizada manda una pregunta de gobernanza y otra de casos y verifica los pasos y la respuesta
+- [x] **S3-36** Prueba de punta a punta del chat · vence: 2026-11-28 · depende: S3-34 · listo cuando: una prueba automatizada manda una pregunta de gobernanza y otra de casos y verifica los pasos y la respuesta
+	nota: dos pruebas automatizadas de navegador aprobadas localmente con MCP y PostgreSQL reales, cubren gobernanza y casos con pasos, fuentes, evidencia y persistencia; pendiente validación del entorno compartido
