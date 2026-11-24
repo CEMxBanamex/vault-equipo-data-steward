@@ -17,7 +17,7 @@ Frente: Frontend. Estados: `[ ]` pendiente, `[/]` en proceso, `[x]` listo, `[!]`
 	nota: PR #20 actualizado con tipo y fuentes; comprobaciones de GitHub aprobadas; pendiente de integración con el PR #13 de Yael y unificación de MSW
 
 ## Semana 3 · 23 al 29 nov
-- [ ] **S3-33** Endpoint SSE real del chat · vence: 2026-11-24 · apoyo: carlos-ramos · depende: S3-15 · listo cuando: el endpoint transmite los pasos y la respuesta de stream_chat con el formato del contrato y guarda los pasos con cada mensaje
+- [x] **S3-33** Endpoint SSE real del chat · vence: 2026-11-24 · apoyo: carlos-ramos · depende: S3-15 · listo cuando: el endpoint transmite los pasos y la respuesta de stream_chat con el formato del contrato y guarda los pasos con cada mensaje
 - [ ] **S3-34** Chat sin MSW en dev · vence: 2026-11-24 · depende: S3-33 · listo cuando: en dev, el chat global y el panel del caso responden con la línea de pasos y su resumen
 - [ ] **S3-35** Agente de casos en el chat · vence: 2026-11-24 · apoyo: yael, carlos-ramos · depende: S3-15 · listo cuando: "¿por qué se rechazó la factura X?" responde con la regla y la evidencia usando consultar_caso y consultar_bitacora
 - [ ] **S3-36** Prueba de punta a punta del chat · vence: 2026-11-28 · depende: S3-34 · listo cuando: una prueba automatizada manda una pregunta de gobernanza y otra de casos y verifica los pasos y la respuesta
