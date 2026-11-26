@@ -1,6 +1,6 @@
 ---
 tipo: tablero
-fecha: 2026-11-25
+fecha: 2026-11-26
 autor: vault-bot
 resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar.
 ---
@@ -8,7 +8,7 @@ resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo
 
 _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a mano: marca tus tareas en tu archivo. Cómo funciona: [[tec/data-steward-agentico/tareas/_index|tareas]]._
 
-**Actualizado:** 2026-11-25 (Ciudad de México). **Semana en curso:** Semana 3 · 23 al 29 nov.
+**Actualizado:** 2026-11-26 (Ciudad de México). **Semana en curso:** Semana 3 · 23 al 29 nov.
 
 **Avance general:** 53 de 79 listas (67 %) · 3 en proceso · 3 bloqueadas · 20 pendientes.
 
@@ -44,14 +44,16 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 | **S3-31** Pantallas de casos y bitácora sin MSW en dev | [[tec/data-steward-agentico/tareas/yael\|Yael]] | 24/11 | En proceso |
 | **S3-34** Chat sin MSW en dev | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 24/11 | Pendiente |
 | **S3-35** Agente de casos en el chat | [[tec/data-steward-agentico/tareas/mauricio\|Mauricio]] | 24/11 | Pendiente |
+| **S3-06** Demo del miércoles | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 25/11 | Pendiente |
 
 ## Vencen hoy y mañana
 | Tarea | Responsable | Vence | Estado |
 |---|---|---|---|
-| **S3-06** Demo del miércoles | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S3-07** Login con Cognito y base privada (cierra S1-09) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
-| **S3-10** Supuestos adoptados en preguntas_socio_formador.md | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
-| **S3-38** Vía rápida para facturas en XML (CFDI 4.0) | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | mañana | Pendiente |
+| **S3-07** Login con Cognito y base privada (cierra S1-09) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
+| **S3-10** Supuestos adoptados en preguntas_socio_formador.md | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
+| **S3-38** Vía rápida para facturas en XML (CFDI 4.0) | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | hoy | Pendiente |
+| **S1-08** Primera versión de ejecutar_consulta, listar_vistas_consultables y consultar_catalogo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
+| **S3-22** Evaluar las respuestas del agente de gobernanza (cierra S1-22) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | mañana | Bloqueado |
 
 ## Se destrabaron
 _Pendientes cuyas dependencias ya están listas: se pueden empezar._
