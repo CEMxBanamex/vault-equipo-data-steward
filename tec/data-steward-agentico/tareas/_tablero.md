@@ -1,6 +1,6 @@
 ---
 tipo: tablero
-fecha: 2026-11-27
+fecha: 2026-11-28
 autor: vault-bot
 resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo y el avance por persona). Léelo al empezar.
 ---
@@ -8,7 +8,7 @@ resumen: Estado de las tareas del equipo (hitos, bloqueos, vencidas, lo próximo
 
 _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a mano: marca tus tareas en tu archivo. Cómo funciona: [[tec/data-steward-agentico/tareas/_index|tareas]]._
 
-**Actualizado:** 2026-11-27 (Ciudad de México). **Semana en curso:** Semana 1 · 9 al 13 nov.
+**Actualizado:** 2026-11-28 (Ciudad de México). **Semana en curso:** Semana 3 · 23 al 29 nov.
 
 **Avance general:** 53 de 79 listas (67 %) · 3 en proceso · 3 bloqueadas · 20 pendientes.
 
@@ -48,18 +48,19 @@ _Lo genera GitHub Actions a partir de los archivos de `tareas/`. No lo edites a 
 | **S3-07** Login con Cognito y base privada (cierra S1-09) | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 26/11 | Pendiente |
 | **S3-10** Supuestos adoptados en preguntas_socio_formador.md | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 26/11 | Pendiente |
 | **S3-38** Vía rápida para facturas en XML (CFDI 4.0) | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | 26/11 | Pendiente |
+| **S1-08** Primera versión de ejecutar_consulta, listar_vistas_consultables y consultar_catalogo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | 27/11 | Pendiente |
+| **S3-22** Evaluar las respuestas del agente de gobernanza (cierra S1-22) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | 27/11 | Bloqueado |
 
 ## Vencen hoy y mañana
 | Tarea | Responsable | Vence | Estado |
 |---|---|---|---|
-| **S1-08** Primera versión de ejecutar_consulta, listar_vistas_consultables y consultar_catalogo | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
-| **S3-22** Evaluar las respuestas del agente de gobernanza (cierra S1-22) | [[tec/data-steward-agentico/tareas/mario\|Mario]] | hoy | Bloqueado |
-| **S3-08** Promover a prod | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
-| **S3-09** Validación del JWT en las APIs | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | mañana | Pendiente |
-| **S3-13** Evaluación del flujo de casos de punta a punta | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | mañana | Pendiente |
-| **S3-17** Intención mixta | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | mañana | Pendiente |
-| **S3-18** Evaluación del enrutador | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | mañana | Pendiente |
-| **S3-27** Prueba de instrucciones inyectadas | [[tec/data-steward-agentico/tareas/iris\|Iris]] | mañana | Pendiente |
+| **S3-08** Promover a prod | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
+| **S3-09** Validación del JWT en las APIs | [[tec/data-steward-agentico/tareas/juan-pablo\|Juan Pablo]] | hoy | Pendiente |
+| **S3-13** Evaluación del flujo de casos de punta a punta | [[tec/data-steward-agentico/tareas/carlos-delgado\|Carlos Delgado]] | hoy | Pendiente |
+| **S3-17** Intención mixta | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
+| **S3-18** Evaluación del enrutador | [[tec/data-steward-agentico/tareas/carlos-ramos\|Carlos Ramos]] | hoy | Pendiente |
+| **S3-27** Prueba de instrucciones inyectadas | [[tec/data-steward-agentico/tareas/iris\|Iris]] | hoy | Pendiente |
+| **S3-28** Presentación final y entrega | [[tec/data-steward-agentico/tareas/iris\|Iris]] | mañana | Pendiente |
 
 ## Se destrabaron
 _Pendientes cuyas dependencias ya están listas: se pueden empezar._
